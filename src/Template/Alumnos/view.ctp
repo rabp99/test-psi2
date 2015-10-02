@@ -6,7 +6,7 @@
         <!-- Split button -->
         <div class="btn-group">
             <button type="button" class="btn btn-primary">
-                <span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Opciones
+                <span class="glyphicon glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> Opciones
             </button>
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="caret"></span>
@@ -18,10 +18,11 @@
                         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Nuevo Alumno
                     </a>
                 </li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li>
+                    <a href="<?= $this->Url->build(["controller" => "Alumnos", "action" => "edit", $alumno->id]); ?>">
+                        <span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span> Editar Alumno
+                    </a>
+                </li>
             </ul>
         </div>
         <h5><strong>Código</strong></h5>
@@ -32,6 +33,6 @@
         
         <h5><strong>Fecha de Nacimiento</strong></h5>
         <p><?= h($alumno->fecha_nac) ?></p>
+        <?= $this->Html->link("Lista de Alumnos", ["controller" => "Alumnos", "action" => "index"]) ?>
     </div>
-    <?= $this->Html->link("Lista de Alumnos", ["controller" => "Alumnos", "action" => "index"]) ?>
 </div>
