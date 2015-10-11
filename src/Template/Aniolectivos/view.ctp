@@ -1,64 +1,36 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('Edit Aniolectivo'), ['action' => 'edit', $aniolectivo->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Aniolectivo'), ['action' => 'delete', $aniolectivo->id], ['confirm' => __('Are you sure you want to delete # {0}?', $aniolectivo->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Aniolectivos'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Aniolectivo'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Matriculas'), ['controller' => 'Matriculas', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Matricula'), ['controller' => 'Matriculas', 'action' => 'add']) ?> </li>
-    </ul>
-</div>
-<div class="aniolectivos view large-10 medium-9 columns">
-    <h2><?= h($aniolectivo->id) ?></h2>
-    <div class="row">
-        <div class="large-5 columns strings">
-            <h6 class="subheader"><?= __('Descripcion') ?></h6>
-            <p><?= h($aniolectivo->descripcion) ?></p>
-            <h6 class="subheader"><?= __('Estado') ?></h6>
-            <p><?= h($aniolectivo->estado) ?></p>
-        </div>
-        <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('Id') ?></h6>
-            <p><?= $this->Number->format($aniolectivo->id) ?></p>
-        </div>
+<?php
+    $this->extend("/Common/vista");
+    $this->assign("title", "Años Lectivos");
+?>
+
+<?php $this->start("opciones"); ?>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">
+            <span class="glyphicon glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> Opciones
+        </button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="<?= $this->Url->build(["controller" => "Aniolectivos", "action" => "add"]); ?>">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Nuevo Año Lectivo
+                </a>
+            </li>
+            <li>
+                <a href="<?= $this->Url->build(["controller" => "Aniolectivos", "action" => "edit", $grado->id]); ?>">
+                    <span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span> Editar Año Lectivo
+                </a>
+            </li>
+        </ul>
     </div>
-</div>
-<div class="related row">
-    <div class="column large-12">
-    <h4 class="subheader"><?= __('Related Matriculas') ?></h4>
-    <?php if (!empty($aniolectivo->matriculas)): ?>
-    <table cellpadding="0" cellspacing="0">
-        <tr>
-            <th><?= __('Id') ?></th>
-            <th><?= __('Grado Id') ?></th>
-            <th><?= __('Aniolectivo Id') ?></th>
-            <th><?= __('Alumno Id') ?></th>
-            <th><?= __('Fecha') ?></th>
-            <th><?= __('Estado') ?></th>
-            <th class="actions"><?= __('Actions') ?></th>
-        </tr>
-        <?php foreach ($aniolectivo->matriculas as $matriculas): ?>
-        <tr>
-            <td><?= h($matriculas->id) ?></td>
-            <td><?= h($matriculas->grado_id) ?></td>
-            <td><?= h($matriculas->aniolectivo_id) ?></td>
-            <td><?= h($matriculas->alumno_id) ?></td>
-            <td><?= h($matriculas->fecha) ?></td>
-            <td><?= h($matriculas->estado) ?></td>
+<?php $this->end(); ?>
 
-            <td class="actions">
-                <?= $this->Html->link(__('View'), ['controller' => 'Matriculas', 'action' => 'view', $matriculas->id]) ?>
+<h5><strong>Código</strong></h5>
+<p><?= h($aniolectivo->id) ?></p>
 
-                <?= $this->Html->link(__('Edit'), ['controller' => 'Matriculas', 'action' => 'edit', $matriculas->id]) ?>
+<h5><strong>Descripción</strong></h5>
+<p><?= h($aniolectivo->descripcion) ?></p>
 
-                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Matriculas', 'action' => 'delete', $matriculas->id], ['confirm' => __('Are you sure you want to delete # {0}?', $matriculas->id)]) ?>
-
-            </td>
-        </tr>
-
-        <?php endforeach; ?>
-    </table>
-    <?php endif; ?>
-    </div>
-</div>
+<?= $this->Html->link("Lista de Años Lectivos", ["controller" => "Aniolectivos", "action" => "index"]) ?>

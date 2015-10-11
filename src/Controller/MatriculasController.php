@@ -8,19 +8,15 @@ use App\Controller\AppController;
  *
  * @property \App\Model\Table\MatriculasTable $Matriculas
  */
-class MatriculasController extends AppController
-{
+class MatriculasController extends AppController {
 
     /**
      * Index method
      *
      * @return void
      */
-    public function index()
-    {
-        $this->paginate = [
-            'contain' => ['Grados', 'Aniolectivos', 'Alumnos']
-        ];
+    public function index() {
+        $this->layout = "main";
         $this->set('matriculas', $this->paginate($this->Matriculas));
         $this->set('_serialize', ['matriculas']);
     }
@@ -32,8 +28,7 @@ class MatriculasController extends AppController
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function view($id = null)
-    {
+    public function view($id = null) {
         $matricula = $this->Matriculas->get($id, [
             'contain' => ['Grados', 'Aniolectivos', 'Alumnos']
         ]);

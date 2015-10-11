@@ -50,10 +50,6 @@ class AniolectivosTable extends Table
             ->requirePresence('descripcion', 'create')
             ->notEmpty('descripcion');
 
-        $validator
-            ->requirePresence('estado', 'create')
-            ->notEmpty('estado');
-
         return $validator;
     }
 }

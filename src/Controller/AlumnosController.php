@@ -17,10 +17,12 @@ class AlumnosController extends AppController {
      */
     public function index() {
         $this->layout = "main";
-        $this->set('alumnos', $this->paginate($this->Alumnos));
+        $this->set('alumnos', $this->paginate($this->Alumnos->find("all")
+            ->where(['Alumnos.estado' => 1])
+        ));
         $this->set('_serialize', ['alumnos']);
     }
-
+    
     /**
      * View method
      *
@@ -46,7 +48,7 @@ class AlumnosController extends AppController {
         if ($this->request->is('post')) {
             $alumno = $this->Alumnos->patchEntity($alumno, $this->request->data);
             if ($this->Alumnos->save($alumno)) {
-                $this->Flash->success(__('El alumno ha sido registrado correctamente.'));
+                $this->Flash->success(__("El alumno ha sido registrado correctamente."));
                 return $this->redirect(['action' => 'index']);
             } else {
                 $this->Flash->error(__('El alumno no pudo ser registrado. Por favor, inténtalo nuevamente.'));
@@ -93,7 +95,7 @@ class AlumnosController extends AppController {
         if ($this->Alumnos->save($alumno)) {
             $this->Flash->success(__('El alumno ha sido deshabilitado.'));
         } else {
-            $this->Flash->error(__('El alumno no pudo ser deshabilitado. Por favor, inténtalo nuevamente..'));
+            $this->Flash->error(__('El alumno no pudo ser deshabilitado. Por favor, inténtalo nuevamente.'));
         }
         return $this->redirect(['action' => 'index']);
     }

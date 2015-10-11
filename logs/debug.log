@@ -54,3 +54,326 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2015-10-08 22:44:19 Notice: Notice (8): Array to string conversion in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\ViewBlock.php, line 164]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\View\ViewBlock::set() - CORE\src\View\ViewBlock.php, line 164
+Cake\View\View::assign() - CORE\src\View\View.php, line 622
+include - APP/Template\Alumnos\index2.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 22:44:19 Notice: Notice (8): Undefined variable: opciones in [C:\wamp\www\test-psi2\src\Template\Common\index.ctp, line 3]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Common\index.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_render() - CORE\src\View\View.php, line 799
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 22:44:19 Notice: Notice (8): Undefined variable: opciones in [C:\wamp\www\test-psi2\src\Template\Common\index.ctp, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Common\index.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_render() - CORE\src\View\View.php, line 799
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 22:44:56 Notice: Notice (8): Array to string conversion in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\ViewBlock.php, line 164]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\View\ViewBlock::set() - CORE\src\View\ViewBlock.php, line 164
+Cake\View\View::assign() - CORE\src\View\View.php, line 622
+include - APP/Template\Alumnos\index2.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 22:44:56 Notice: Notice (8): Undefined variable: opciones in [C:\wamp\www\test-psi2\src\Template\Common\index.ctp, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Common\index.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_render() - CORE\src\View\View.php, line 799
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 22:45:13 Notice: Notice (8): Array to string conversion in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\ViewBlock.php, line 164]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\View\ViewBlock::set() - CORE\src\View\ViewBlock.php, line 164
+Cake\View\View::assign() - CORE\src\View\View.php, line 622
+include - APP/Template\Alumnos\index2.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 22:45:13 Notice: Notice (8): Undefined variable: opciones in [C:\wamp\www\test-psi2\src\Template\Common\index.ctp, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Common\index.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_render() - CORE\src\View\View.php, line 799
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 22:45:36 Notice: Notice (8): Array to string conversion in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\ViewBlock.php, line 164]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\View\ViewBlock::set() - CORE\src\View\ViewBlock.php, line 164
+Cake\View\View::assign() - CORE\src\View\View.php, line 622
+include - APP/Template\Alumnos\index2.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 22:45:36 Notice: Notice (8): Undefined variable: opciones in [C:\wamp\www\test-psi2\src\Template\Common\index.ctp, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Common\index.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_render() - CORE\src\View\View.php, line 799
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 22:45:47 Notice: Notice (8): Array to string conversion in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\ViewBlock.php, line 164]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\View\ViewBlock::set() - CORE\src\View\ViewBlock.php, line 164
+Cake\View\View::assign() - CORE\src\View\View.php, line 622
+include - APP/Template\Alumnos\index2.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 22:50:26 Notice: Notice (8): Object of class App\View\AppView could not be converted to int in [C:\wamp\www\test-psi2\src\Template\Alumnos\index2.ctp, line 11]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Alumnos\index2.ctp, line 11
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 22:59:22 Notice: Notice (8): Undefined variable: alumnos in [C:\wamp\www\test-psi2\src\Template\Grados\index.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Grados\index.ctp, line 22
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 23:11:04 Notice: Notice (8): Undefined variable: alumno in [C:\wamp\www\test-psi2\src\Template\Grados\index.ctp, line 26]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Grados\index.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 23:11:04 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\test-psi2\src\Template\Grados\index.ctp, line 26]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Grados\index.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 23:11:42 Notice: Notice (8): Undefined variable: alumno in [C:\wamp\www\test-psi2\src\Template\Grados\index.ctp, line 26]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Grados\index.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-08 23:11:42 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\test-psi2\src\Template\Grados\index.ctp, line 26]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Grados\index.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-10 22:19:07 Notice: Notice (8): Undefined variable: grado in [C:\wamp\www\test-psi2\src\Template\Aniolectivos\index.ctp, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Aniolectivos\index.ctp, line 27
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-10 22:19:07 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\test-psi2\src\Template\Aniolectivos\index.ctp, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Aniolectivos\index.ctp, line 27
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-10 22:19:34 Notice: Notice (8): Undefined variable: grado in [C:\wamp\www\test-psi2\src\Template\Aniolectivos\view.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Aniolectivos\view.ctp, line 22
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-10 22:19:34 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\test-psi2\src\Template\Aniolectivos\view.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Aniolectivos\view.ctp, line 22
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-10 22:19:37 Notice: Notice (8): Undefined variable: grado in [C:\wamp\www\test-psi2\src\Template\Aniolectivos\edit.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Aniolectivos\edit.ctp, line 22
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-10 22:19:37 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\test-psi2\src\Template\Aniolectivos\edit.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Aniolectivos\edit.ctp, line 22
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+

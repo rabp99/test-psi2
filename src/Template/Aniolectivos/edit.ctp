@@ -1,26 +1,41 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $aniolectivo->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $aniolectivo->id)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Aniolectivos'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Matriculas'), ['controller' => 'Matriculas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Matricula'), ['controller' => 'Matriculas', 'action' => 'add']) ?></li>
-    </ul>
-</div>
-<div class="aniolectivos form large-10 medium-9 columns">
-    <?= $this->Form->create($aniolectivo) ?>
-    <fieldset>
-        <legend><?= __('Edit Aniolectivo') ?></legend>
-        <?php
-            echo $this->Form->input('descripcion');
-            echo $this->Form->input('estado');
+<?php
+    $this->extend("/Common/vista");
+    $this->assign("title", "Aniolectivos");
+?>
+
+<?php $this->start("opciones"); ?>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">
+            <span class="glyphicon glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> Opciones
+        </button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="<?= $this->Url->build(["controller" => "Aniolectivos", "action" => "add"]); ?>">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Nuevo Año Lectivo
+                </a>
+            </li>
+            <li>
+                <a href="<?= $this->Url->build(["controller" => "Aniolectivos", "action" => "edit", $grado->id]); ?>">
+                    <span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span> Editar Año Lectivo
+                </a>
+            </li>
+        </ul>
+    </div>
+<?php $this->end(); ?>
+
+<?= $this->Form->create($aniolectivo) ?>
+    <div class="form-group">
+        <?php 
+            echo $this->Form->input("descripcion", [
+                "label" => "Descripción",
+                "class" => "form-control"
+            ]);
+            echo $this->Form->button("Registrar", ["class" => "btn btn-default"]);
         ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
-</div>
+    </div>
+<?= $this->Form->end() ?>
+<?= $this->Html->link("Lista de Años Lectivos", ["controller" => "Aniolectivos", "action" => "index"]) ?>

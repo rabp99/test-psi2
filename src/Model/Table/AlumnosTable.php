@@ -69,10 +69,6 @@ class AlumnosTable extends Table
             ->requirePresence('fecha_nac', 'create')
             ->notEmpty('fecha_nac');
 
-        $validator
-            ->requirePresence('estado', 'create')
-            ->notEmpty('estado');
-
         return $validator;
     }
 }

@@ -1,42 +1,47 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Aniolectivo'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Matriculas'), ['controller' => 'Matriculas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Matricula'), ['controller' => 'Matriculas', 'action' => 'add']) ?></li>
-    </ul>
-</div>
-<div class="aniolectivos index large-10 medium-9 columns">
-    <table cellpadding="0" cellspacing="0">
-    <thead>
-        <tr>
-            <th><?= $this->Paginator->sort('id') ?></th>
-            <th><?= $this->Paginator->sort('descripcion') ?></th>
-            <th><?= $this->Paginator->sort('estado') ?></th>
-            <th class="actions"><?= __('Actions') ?></th>
-        </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($aniolectivos as $aniolectivo): ?>
-        <tr>
-            <td><?= $this->Number->format($aniolectivo->id) ?></td>
-            <td><?= h($aniolectivo->descripcion) ?></td>
-            <td><?= h($aniolectivo->estado) ?></td>
-            <td class="actions">
-                <?= $this->Html->link(__('View'), ['action' => 'view', $aniolectivo->id]) ?>
-                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $aniolectivo->id]) ?>
-                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $aniolectivo->id], ['confirm' => __('Are you sure you want to delete # {0}?', $aniolectivo->id)]) ?>
-            </td>
-        </tr>
+<?php
+    $this->extend("/Common/vista");
+    $this->assign("title", "Años Lectivos");
+?>
 
-    <?php endforeach; ?>
-    </tbody>
+<?php $this->start("opciones"); ?>
+    <a href="<?= $this->Url->build(["controller" => "Aniolectivos", "action" => "add"]); ?>" class="btn btn-primary">
+         <span class="glyphicon glyphicon glyphicon-plus" aria-hidden="true"></span> 
+         Nuevo Año Lectivo
+    </a>
+<?php $this->end(); ?>
+
+<div class="dataTable_wrapper">
+    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+        <thead>
+            <tr>
+                <th><?= $this->Paginator->sort("id") ?></th>
+                <th><?= $this->Paginator->sort("descripcion") ?></th>
+                <th class="actions"><?= __("Acciones") ?></th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php foreach($aniolectivos as $aniolectivo) {
+            echo $this->Html->tableCells(
+                [
+                    $this->Number->format($aniolectivo->id),
+                    h($aniolectivo->descripcion),
+                    $this->Html->link(__('Ver'), ['action' => 'view', $aniolectivo->id]) . " | " .
+                    $this->Html->link(__('Editar'), ['action' => 'edit', $aniolectivo->id]) . " | " .
+                    $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $aniolectivo->id], ['confirm' => __("¿Estás seguro de deshabilitar el Grado de código {0}?", $aniolectivo->id)])
+                ], [
+                    "class" => "info"
+                ], [
+                    "class" => "warning"
+                ]
+            );
+        } ?>
+        </tbody>
     </table>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->prev('< ' . __('anterior')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->next(__('siguiente') . ' >') ?>
         </ul>
         <p><?= $this->Paginator->counter() ?></p>
     </div>
