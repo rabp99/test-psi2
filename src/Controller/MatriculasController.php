@@ -41,8 +41,8 @@ class MatriculasController extends AppController {
      *
      * @return void Redirects on successful add, renders view otherwise.
      */
-    public function add()
-    {
+    public function add() {
+        $this->layout = "main";
         $matricula = $this->Matriculas->newEntity();
         if ($this->request->is('post')) {
             $matricula = $this->Matriculas->patchEntity($matricula, $this->request->data);
@@ -53,7 +53,10 @@ class MatriculasController extends AppController {
                 $this->Flash->error(__('The matricula could not be saved. Please, try again.'));
             }
         }
-        $grados = $this->Matriculas->Grados->find('list', ['limit' => 200]);
+        $grados = $this->Matriculas->Grados->find("list", [
+            "keyField" => "id",
+            'valueField' => "descripcion"
+        ]);
         $aniolectivos = $this->Matriculas->Aniolectivos->find('list', ['limit' => 200]);
         $alumnos = $this->Matriculas->Alumnos->find('list', ['limit' => 200]);
         $this->set(compact('matricula', 'grados', 'aniolectivos', 'alumnos'));
