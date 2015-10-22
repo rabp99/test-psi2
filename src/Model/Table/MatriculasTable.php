@@ -51,20 +51,13 @@ class MatriculasTable extends Table
      * @param \Cake\Validation\Validator $validator Validator instance.
      * @return \Cake\Validation\Validator
      */
-    public function validationDefault(Validator $validator)
-    {
+    public function validationDefault(Validator $validator) {
         $validator
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create');
 
         $validator
-            ->add('fecha', 'valid', ['rule' => 'date'])
-            ->requirePresence('fecha', 'create')
-            ->notEmpty('fecha');
-
-        $validator
-            ->requirePresence('estado', 'create')
-            ->notEmpty('estado');
+            ->add('fecha', 'valid', ['rule' => 'date']);
 
         return $validator;
     }

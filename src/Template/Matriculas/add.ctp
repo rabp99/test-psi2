@@ -6,24 +6,19 @@
 <?= $this->Form->create($matricula) ?>
     <div class="form-group">
         <?php 
-            echo $this->Form->input("grados._id", [
+            echo $this->Form->input("aniolectivos", [
+                "label" => "Año Lectivo",
+                "class" => "form-control",
+                "empty" => "Selecciona uno",
+                "options" => $aniolectivos
+            ]);
+            echo $this->Form->input("grado.id", [
                 "label" => "Grado",
                 "class" => "form-control",
                 "empty" => "Selecciona uno",
-                "options" => $grados
+                "options" => $grados,
             ]);
-            echo $this->Form->input("apellido_paterno", [
-                "label" => "Apellido Paterno",
-                "class" => "form-control"
-            ]); 
-            echo $this->Form->input("apellido_materno", [
-                "label" => "Apellido Materno",
-                "class" => "form-control"
-            ]); 
-            echo $this->Form->input("fecha_nac", [
-                "label" => "Fecha de Nacimiento",
-                "class" => "form-control"
-            ]); 
+            echo $this->element("getAlumno");
             echo $this->Form->button("Registrar", ["class" => "btn btn-default"]);
         ?>
     </div>

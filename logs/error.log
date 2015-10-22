@@ -2679,3 +2679,616 @@ Stack Trace:
 #24 {main}
 
 
+2015-10-17 16:32:02 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-10-17 16:44:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 16:58:39 Error: [Cake\Controller\Exception\MissingActionException] Action AlumnosController::getAlumnos() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'getAlumnos',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\AlumnosController))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\RequestActionTrait.php(154): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 C:\wamp\www\test-psi2\src\Template\Element\getAlumno.ctp(38): Cake\View\View->requestAction(Array)
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(828): include('C:\\wamp\\www\\tes...')
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(788): Cake\View\View->_evaluate('C:\\wamp\\www\\tes...', Array)
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(1155): Cake\View\View->_render('C:\\wamp\\www\\tes...', Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(376): Cake\View\View->_renderElement('C:\\wamp\\www\\tes...', Array, Array)
+#8 C:\wamp\www\test-psi2\src\Template\Matriculas\add.ctp(21): Cake\View\View->element('getAlumno')
+#9 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(828): include('C:\\wamp\\www\\tes...')
+#10 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(788): Cake\View\View->_evaluate('C:\\wamp\\www\\tes...', Array)
+#11 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(465): Cake\View\View->_render('C:\\wamp\\www\\tes...')
+#12 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(583): Cake\View\View->render(NULL, NULL)
+#13 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#14 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#15 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2015-10-17 16:58:42 Error: [Cake\Controller\Exception\MissingActionException] Action AlumnosController::getAlumnos() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'getAlumnos',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\AlumnosController))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\RequestActionTrait.php(154): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 C:\wamp\www\test-psi2\src\Template\Element\getAlumno.ctp(38): Cake\View\View->requestAction(Array)
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(828): include('C:\\wamp\\www\\tes...')
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(788): Cake\View\View->_evaluate('C:\\wamp\\www\\tes...', Array)
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(1155): Cake\View\View->_render('C:\\wamp\\www\\tes...', Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(376): Cake\View\View->_renderElement('C:\\wamp\\www\\tes...', Array, Array)
+#8 C:\wamp\www\test-psi2\src\Template\Matriculas\add.ctp(21): Cake\View\View->element('getAlumno')
+#9 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(828): include('C:\\wamp\\www\\tes...')
+#10 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(788): Cake\View\View->_evaluate('C:\\wamp\\www\\tes...', Array)
+#11 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\View\View.php(465): Cake\View\View->_render('C:\\wamp\\www\\tes...')
+#12 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(583): Cake\View\View->render(NULL, NULL)
+#13 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#14 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#15 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2015-10-17 17:15:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 17:21:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 17:26:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 17:26:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 17:32:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 17:33:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 17:34:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 17:34:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 17:34:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:38:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:40:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:42:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:44:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:45:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:45:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:45:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:45:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:46:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:46:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:46:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-17 18:53:24 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-10-21 01:37:29 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-10-21 01:37:34 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-10-21 01:37:36 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-10-21 01:48:41 Error: Fatal Error (1): Call to undefined method App\Controller\MatriculasController::getDataSource() in [C:\wamp\www\test-psi2\src\Controller\MatriculasController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-10-21 01:48:41 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\MatriculasController::getDataSource()
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\tes...', 53)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-21 01:49:07 Error: [BadMethodCallException] Unknown method "getDataSource"
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(53): Cake\ORM\Table->__call('getDataSource', Array)
+#1 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(53): App\Model\Table\MatriculasTable->getDataSource()
+#2 [internal function]: App\Controller\MatriculasController->add()
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#6 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-10-21 01:50:47 Error: [BadMethodCallException] Unknown method "getDataSource"
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(53): Cake\ORM\Table->__call('getDataSource', Array)
+#1 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(53): App\Model\Table\MatriculasTable->getDataSource()
+#2 [internal function]: App\Controller\MatriculasController->add()
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#6 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-10-21 02:02:34 Error: Fatal Error (1): Call to undefined method Cake\Database\Connection::errorInfo() in [C:\wamp\www\test-psi2\src\Controller\MatriculasController.php, line 54]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-10-21 02:02:34 Error: [Cake\Error\FatalErrorException] Call to undefined method Cake\Database\Connection::errorInfo()
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\tes...', 54)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-21 02:10:36 Error: Fatal Error (1): Call to undefined method Cake\Database\Connection::errorInfo() in [C:\wamp\www\test-psi2\src\Controller\MatriculasController.php, line 54]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-10-21 02:10:37 Error: [Cake\Error\FatalErrorException] Call to undefined method Cake\Database\Connection::errorInfo()
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\tes...', 54)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-21 02:15:06 Error: [RuntimeException] Table "App\Model\Table\MatriculasTable" is not associated with "connection"
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(53): Cake\ORM\Table->__get('connection')
+#1 [internal function]: App\Controller\MatriculasController->add()
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-10-21 02:20:17 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (, , , ), expecting (id, grado_id, aniolectivo_id, alumno_id)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Matricula), Array)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Matricula), Object(ArrayObject))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#4 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(49): Cake\ORM\Table->save(Object(App\Model\Entity\Matricula))
+#5 [internal function]: App\Controller\MatriculasController->add()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#9 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-10-21 02:20:30 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (, , , ), expecting (id, grado_id, aniolectivo_id, alumno_id)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Matricula), Array)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Matricula), Object(ArrayObject))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#4 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(49): Cake\ORM\Table->save(Object(App\Model\Entity\Matricula))
+#5 [internal function]: App\Controller\MatriculasController->add()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#9 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-10-21 02:22:34 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (, , , ), expecting (id, grado_id, aniolectivo_id, alumno_id)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Matricula), Array)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Matricula), Object(ArrayObject))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#4 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(49): Cake\ORM\Table->save(Object(App\Model\Entity\Matricula))
+#5 [internal function]: App\Controller\MatriculasController->add()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#9 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-10-21 02:23:25 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (, , , ), expecting (id, grado_id, aniolectivo_id, alumno_id)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Matricula), Array)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Matricula), Object(ArrayObject))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#4 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(49): Cake\ORM\Table->save(Object(App\Model\Entity\Matricula))
+#5 [internal function]: App\Controller\MatriculasController->add()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#9 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-10-21 02:24:02 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (, , , ), expecting (id, grado_id, aniolectivo_id, alumno_id)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Matricula), Array)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Matricula), Object(ArrayObject))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#4 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(49): Cake\ORM\Table->save(Object(App\Model\Entity\Matricula))
+#5 [internal function]: App\Controller\MatriculasController->add()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#9 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-10-21 02:26:38 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (, , , ), expecting (id, grado_id, aniolectivo_id, alumno_id)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Matricula), Array)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Matricula), Object(ArrayObject))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#4 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(50): Cake\ORM\Table->save(Object(App\Model\Entity\Matricula))
+#5 [internal function]: App\Controller\MatriculasController->add()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#9 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-10-22 01:45:04 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+

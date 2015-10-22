@@ -23,6 +23,9 @@
 
     <!-- Custom Fonts -->
     <?= $this->Html->css("font-awesome.min.css") ?>
+    
+    <!-- Writes my CSS code -->
+    <?= $this->fetch('css') ?>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -391,7 +394,9 @@
 
     <!-- Custom Theme JavaScript -->
     <?= $this->Html->script("sb-admin-2.js"); ?>
-
+    
+    <!-- Writes my JS code -->
+    <?= $this->fetch('script') ?>
 </body>
 
 </html>

@@ -19,9 +19,6 @@ class Matricula extends Entity
      */
     protected $_accessible = [
         '*' => true,
-        'id' => false,
-        'grado_id' => false,
-        'aniolectivo_id' => false,
-        'alumno_id' => false,
+        'id' => false
     ];
 }

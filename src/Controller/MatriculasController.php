@@ -45,20 +45,25 @@ class MatriculasController extends AppController {
         $this->layout = "main";
         $matricula = $this->Matriculas->newEntity();
         if ($this->request->is('post')) {
+            debug($this->request->data);
             $matricula = $this->Matriculas->patchEntity($matricula, $this->request->data);
             if ($this->Matriculas->save($matricula)) {
-                $this->Flash->success(__('The matricula has been saved.'));
+                $this->Flash->success(__("La matrícula ha sido registrada correctamente."));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The matricula could not be saved. Please, try again.'));
+                $this->Flash->error(__('La matrícula no pudo ser registrada. Por favor, inténtalo nuevamente.'));
             }
         }
         $grados = $this->Matriculas->Grados->find("list", [
             "keyField" => "id",
             'valueField' => "descripcion"
         ]);
-        $aniolectivos = $this->Matriculas->Aniolectivos->find('list', ['limit' => 200]);
-        $alumnos = $this->Matriculas->Alumnos->find('list', ['limit' => 200]);
+        $aniolectivos = $this->Matriculas->Aniolectivos->find('list', [
+            "keyField" => "id",
+            'valueField' => "descripcion"
+        ]);
+        $alumnos = $this->Matriculas->Alumnos->find("all")
+            ->where(['Alumnos.estado' => 1]);
         $this->set(compact('matricula', 'grados', 'aniolectivos', 'alumnos'));
         $this->set('_serialize', ['matricula']);
     }

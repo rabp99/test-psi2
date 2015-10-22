@@ -1,0 +1,42 @@
+#tblAlumnos tbody {
+    display: block;
+    height: 300px;
+    overflow-Y: scroll;
+}
+
+#tblAlumnos tr {
+    display: block;
+    overflow: hidden;
+}
+
+#tblAlumnos thead th:nth-child(1) {
+    width: 18%;
+}
+
+#tblAlumnos thead th:nth-child(2) {
+    width: 35%;
+}
+
+#tblAlumnos thead th:nth-child(3) {
+    width: 23%;
+}
+
+#tblAlumnos thead th:nth-child(4) {
+    width: 20%;
+}
+
+#tblAlumnos tbody td:nth-child(1) {
+    width: 18%;
+}
+
+#tblAlumnos tbody td:nth-child(2) {
+    width: 35%;
+}
+
+#tblAlumnos tbody td:nth-child(3) {
+    width: 23%;
+}
+
+#tblAlumnos tbody td:nth-child(4) {
+    width: 17%;
+}
