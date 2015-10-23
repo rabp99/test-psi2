@@ -34,5 +34,5 @@
 <p><?= h($alumno->nombre_completo) ?></p>
 
 <h5><strong>Fecha de Nacimiento</strong></h5>
-<p><?= h($alumno->fecha_nac) ?></p>
+<p><?= h($alumno->fecha_nac->i18nFormat("YYYY-MM-dd")) ?></p>
 <?= $this->Html->link("Lista de Alumnos", ["controller" => "Alumnos", "action" => "index"]) ?>

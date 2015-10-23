@@ -17,7 +17,6 @@
                 <th><?= $this->Paginator->sort("id", "Código") ?></th>
                 <th><?= $this->Paginator->sort('nombre_completo') ?></th>
                 <th><?= $this->Paginator->sort('fecha_nac') ?></th>
-                <th><?= $this->Paginator->sort('estado') ?></th>
                 <th class="actions"><?= __('Acciones') ?></th>
             </tr>
         </thead>
@@ -27,8 +26,7 @@
                 [
                     $this->Number->format($alumno->id),
                     h($alumno->nombre_completo),
-                    h($alumno->fecha_nac),
-                    h($alumno->estado),
+                    h($alumno->fecha_nac->i18nFormat("YYYY-MM-dd")),
                     $this->Html->link(__('Ver'), ['action' => 'view', $alumno->id]) . " | " .
                     $this->Html->link(__('Editar'), ['action' => 'edit', $alumno->id]) . " | " .
                     $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $alumno->id], ['confirm' => __('¿Estás seguro de deshabilitar el Alumno de código {0}?', $alumno->id)])
@@ -47,6 +45,6 @@
             <?= $this->Paginator->numbers() ?>
             <?= $this->Paginator->next(__('siguiente') . ' >') ?>
         </ul>
-        <p><?= $this->Paginator->counter() ?></p>
+        <p><?= $this->Paginator->counter("{{page}} de {{pages}}"); ?></p>
     </div>
 </div>

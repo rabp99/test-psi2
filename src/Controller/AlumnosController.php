@@ -15,11 +15,20 @@ class AlumnosController extends AppController {
      *
      * @return void
      */
+    public $paginate = [
+        "limit" => 10,
+        "order" => [
+            "Alumnos.nombre_completo" => "asc"
+        ],
+        "conditions" => [
+            "Alumnos.estado" => 1
+        ]
+    ];
+    
+    
     public function index() {
         $this->layout = "main";
-        $this->set('alumnos', $this->paginate($this->Alumnos->find("all")
-            ->where(['Alumnos.estado' => 1])
-        ));
+        $this->set('alumnos', $this->paginate());
         $this->set('_serialize', ['alumnos']);
     }
     
@@ -47,6 +56,7 @@ class AlumnosController extends AppController {
         $alumno = $this->Alumnos->newEntity();
         if ($this->request->is('post')) {
             $alumno = $this->Alumnos->patchEntity($alumno, $this->request->data);
+            $alumno->fecha_nac = $this->request->data["fecha_nac"];
             if ($this->Alumnos->save($alumno)) {
                 $this->Flash->success(__("El alumno ha sido registrado correctamente."));
                 return $this->redirect(['action' => 'index']);
@@ -68,6 +78,7 @@ class AlumnosController extends AppController {
     public function edit($id = null) {
         $this->layout = "main";
         $alumno = $this->Alumnos->get($id);
+        $alumno->fecha_nac = $alumno->fecha_nac->i18nFormat("YYYY-MM-dd");
         if ($this->request->is(['patch', 'post', 'put'])) {
             $alumno = $this->Alumnos->patchEntity($alumno, $this->request->data);
             if ($this->Alumnos->save($alumno)) {
