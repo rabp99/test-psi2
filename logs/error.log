@@ -3292,3 +3292,144 @@ Stack Trace:
 #8 {main}
 
 
+2015-10-22 23:35:33 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-10-22 23:40:32 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (, ), expecting (id, tipo_id)
+Request URL: /test-psi2/tests/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Test), Array)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Test), Object(ArrayObject))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#4 C:\wamp\www\test-psi2\src\Controller\TestsController.php(54): Cake\ORM\Table->save(Object(App\Model\Entity\Test))
+#5 [internal function]: App\Controller\TestsController->add()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#9 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-10-22 23:43:13 Error: [RuntimeException] Cannot match provided foreignKey for "Tests", got "(test_id)" but expected foreign key for "(id, tipo_id)"
+Request URL: /test-psi2/preguntas
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Association.php(525): Cake\ORM\Association\BelongsTo->_joinCondition(Array)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(326): Cake\ORM\Association->attachTo(Object(Cake\ORM\Query), Array)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\PreguntasTable), true)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Query.php(638): Cake\ORM\Query->_transformQuery()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(120): Cake\ORM\Query->sql()
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(220): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Query.php(176): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#9 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#10 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#11 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(172): Cake\ORM\Query->all()
+#12 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(642): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\PreguntasTable), Array)
+#13 C:\wamp\www\test-psi2\src\Controller\PreguntasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\PreguntasTable))
+#14 [internal function]: App\Controller\PreguntasController->index()
+#15 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#16 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#17 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PreguntasController))
+#18 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#19 {main}
+
+
+2015-10-22 23:46:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 23:48:13 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (, , , ), expecting (id, grado_id, aniolectivo_id, alumno_id)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Matricula), Array)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Matricula), Object(ArrayObject))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#4 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(51): Cake\ORM\Table->save(Object(App\Model\Entity\Matricula))
+#5 [internal function]: App\Controller\MatriculasController->add()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#9 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-10-22 23:49:18 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (, , , ), expecting (id, grado_id, aniolectivo_id, alumno_id)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Matricula), Array)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Matricula), Object(ArrayObject))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#4 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(51): Cake\ORM\Table->save(Object(App\Model\Entity\Matricula))
+#5 [internal function]: App\Controller\MatriculasController->add()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#9 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-10-23 00:15:49 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (, , , ), expecting (id, grado_id, aniolectivo_id, alumno_id)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Matricula), Array)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Matricula), Object(ArrayObject))
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#4 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(51): Cake\ORM\Table->save(Object(App\Model\Entity\Matricula))
+#5 [internal function]: App\Controller\MatriculasController->add()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#9 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-10-23 00:17:29 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`test-psi`.`matriculas`, CONSTRAINT `fk_matriculas_grados1` FOREIGN KEY (`grado_id`) REFERENCES `grados` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Query.php(176): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1516): Cake\Database\Query->execute()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Matricula), Array)
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Matricula), Object(ArrayObject))
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\wamp\www\test-psi2\src\Controller\MatriculasController.php(51): Cake\ORM\Table->save(Object(App\Model\Entity\Matricula))
+#11 [internal function]: App\Controller\MatriculasController->add()
+#12 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#13 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MatriculasController))
+#15 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+

@@ -17,7 +17,10 @@ class MatriculasController extends AppController {
      */
     public function index() {
         $this->layout = "main";
-        $this->set('matriculas', $this->paginate($this->Matriculas));
+        $this->set('matriculas', $this->paginate($this->Matriculas->find("all")
+            ->where(["Matriculas.estado" => 1])
+            ->contain(["Alumnos", "Grados", "Aniolectivos"])
+        ));
         $this->set('_serialize', ['matriculas']);
     }
 
@@ -29,6 +32,7 @@ class MatriculasController extends AppController {
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function view($id = null) {
+        $this->layout = "main";
         $matricula = $this->Matriculas->get($id, [
             'contain' => ['Grados', 'Aniolectivos', 'Alumnos']
         ]);
@@ -47,6 +51,7 @@ class MatriculasController extends AppController {
         if ($this->request->is('post')) {
             debug($this->request->data);
             $matricula = $this->Matriculas->patchEntity($matricula, $this->request->data);
+            debug($matricula->errors());
             if ($this->Matriculas->save($matricula)) {
                 $this->Flash->success(__("La matrícula ha sido registrada correctamente."));
                 return $this->redirect(['action' => 'index']);
@@ -75,23 +80,30 @@ class MatriculasController extends AppController {
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null)
-    {
-        $matricula = $this->Matriculas->get($id, [
-            'contain' => []
-        ]);
+    public function edit($id = null) {
+        
+        $this->layout = "main";
+        $matricula = $this->Matriculas->get($id);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $matricula = $this->Matriculas->patchEntity($matricula, $this->request->data);
             if ($this->Matriculas->save($matricula)) {
-                $this->Flash->success(__('The matricula has been saved.'));
+                $this->Flash->success(__("La matrícula  ha sido registrada correctamente."));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The matricula could not be saved. Please, try again.'));
+                $this->Flash->error(__('La matrícula no pudo ser registrada. Por favor, inténtalo nuevamente.'));
             }
         }
-        $grados = $this->Matriculas->Grados->find('list', ['limit' => 200]);
-        $aniolectivos = $this->Matriculas->Aniolectivos->find('list', ['limit' => 200]);
-        $alumnos = $this->Matriculas->Alumnos->find('list', ['limit' => 200]);
+
+        $grados = $this->Matriculas->Grados->find("list", [
+            "keyField" => "id",
+            'valueField' => "descripcion"
+        ]);
+        $aniolectivos = $this->Matriculas->Aniolectivos->find('list', [
+            "keyField" => "id",
+            'valueField' => "descripcion"
+        ]);
+        $alumnos = $this->Matriculas->Alumnos->find("all")
+            ->where(['Alumnos.estado' => 1]);
         $this->set(compact('matricula', 'grados', 'aniolectivos', 'alumnos'));
         $this->set('_serialize', ['matricula']);
     }
@@ -103,14 +115,14 @@ class MatriculasController extends AppController {
      * @return void Redirects to index.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function delete($id = null)
-    {
+    public function delete($id = null) {
         $this->request->allowMethod(['post', 'delete']);
         $matricula = $this->Matriculas->get($id);
-        if ($this->Matriculas->delete($matricula)) {
-            $this->Flash->success(__('The matricula has been deleted.'));
+        $matricula->estado = 2;
+        if ($this->Matriculas->save($matricula)) {
+            $this->Flash->success(__('La matrícula ha sido deshabilitada.'));
         } else {
-            $this->Flash->error(__('The matricula could not be deleted. Please, try again.'));
+            $this->Flash->error(__('La matrícula no pudo ser deshabilitada. Por favor, inténtalo nuevamente.'));
         }
         return $this->redirect(['action' => 'index']);
     }

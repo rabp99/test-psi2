@@ -29,7 +29,7 @@ class MatriculasTable extends Table
 
         $this->table('matriculas');
         $this->displayField('id');
-        $this->primaryKey(['id', 'grado_id', 'aniolectivo_id', 'alumno_id']);
+        $this->primaryKey('id');
 
         $this->belongsTo('Grados', [
             'foreignKey' => 'grado_id',

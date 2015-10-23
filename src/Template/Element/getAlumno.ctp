@@ -1,6 +1,6 @@
 <?= $this->Html->css("getAlumnos"); ?>
 <?php
-    echo $this->Form->input("alumno.id", [
+    echo $this->Form->input("alumno_id", [
         "label" => "Código del Alumno",
         "type" => "text",
         "class" => "form-control",
@@ -8,7 +8,7 @@
         "data-toggle" => "modal",
         "data-target" => "#mdlGetAlumno"
     ]);
-    echo $this->Form->input("alumno.nombreCompleto", [
+    echo $this->Form->input("alumn.nombreCompleto", [
         "label" => "Nombre del Alumno",
         "type" => "text",
         "class" => "form-control",
@@ -28,7 +28,7 @@
             </div>
             <div class="modal-body">
                 <?php
-                    echo $this->Form->input("alumno.busqueda", [
+                    echo $this->Form->input("alumn.busqueda", [
                         "label" => "Buscar",
                         "class" => "form-control",
                         "type" => "search"

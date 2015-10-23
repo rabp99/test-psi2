@@ -32,8 +32,7 @@ class AlumnosTestsController extends AppController
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function view($id = null)
-    {
+    public function view($id = null) {
         $alumnosTest = $this->AlumnosTests->get($id, [
             'contain' => ['Alumnos', 'Tests']
         ]);
