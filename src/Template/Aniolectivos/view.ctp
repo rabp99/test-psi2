@@ -19,7 +19,7 @@
                 </a>
             </li>
             <li>
-                <a href="<?= $this->Url->build(["controller" => "Aniolectivos", "action" => "edit", $grado->id]); ?>">
+                <a href="<?= $this->Url->build(["controller" => "Aniolectivos", "action" => "edit", $aniolectivo->id]); ?>">
                     <span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span> Editar Año Lectivo
                 </a>
             </li>

@@ -19,8 +19,8 @@
                 </a>
             </li>
             <li>
-                <a href="<?= $this->Url->build(["controller" => "Grados", "action" => "edit", $grado->id]); ?>">
-                    <span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span> Editar Grado
+                <a href="<?= $this->Url->build(["controller" => "Grados", "action" => "view", $grado->id]); ?>">
+                    <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span> Ver Grado
                 </a>
             </li>
         </ul>
@@ -32,7 +32,18 @@
         <?php 
             echo $this->Form->input("descripcion", [
                 "label" => "Descripción",
-                "class" => "form-control"
+                "class" => "form-control",
+                "autofocus", "autofocus"
+            ]);
+            echo $this->Form->input("nivel", [
+               "label" => "Nivel",
+                "class" => "form-control",
+                "options" => [
+                    "Inicial" => "Inicial",
+                    "Primaria" => "Primaria",
+                    "Secundaria" => "Secundaria"
+                ],
+                "empty" => "Seleccionar"
             ]);
             echo $this->Form->button("Registrar", ["class" => "btn btn-default"]);
         ?>

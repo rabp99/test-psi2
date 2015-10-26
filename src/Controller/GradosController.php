@@ -15,11 +15,19 @@ class GradosController extends AppController {
      *
      * @return void
      */
+    public $paginate = [
+        "limit" => 10,
+        "order" => [
+            "Grados.descripcion" => "desc"
+        ],
+        "conditions" => [
+            "Grados.estado" => 1
+        ]
+    ];
+        
     public function index() {
         $this->layout = "main";
-        $this->set('grados', $this->paginate($this->Grados->find("all")
-            ->where(['Grados.estado' => 1])
-        ));
+        $this->set('grados', $this->paginate());
         $this->set('_serialize', ['grados']);
     }
 

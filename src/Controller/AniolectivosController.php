@@ -8,19 +8,26 @@ use App\Controller\AppController;
  *
  * @property \App\Model\Table\AniolectivosTable $Aniolectivos
  */
-class AniolectivosController extends AppController
-{
+class AniolectivosController extends AppController {
 
     /**
      * Index method
      *
      * @return void
      */
+    public $paginate = [
+        "limit" => 10,
+        "order" => [
+            "Aniolectivos.descripcion" => "desc"
+        ],
+        "conditions" => [
+            "Aniolectivos.estado" => 1
+        ]
+    ];
+        
     public function index() {
         $this->layout = "main";
-        $this->set('aniolectivos', $this->paginate($this->Aniolectivos->find("all")
-            ->where(['Aniolectivos.estado' => 1])
-        ));
+        $this->set('aniolectivos', $this->paginate());
         $this->set('_serialize', ['aniolectivos']);
     }
 

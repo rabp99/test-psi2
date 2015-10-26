@@ -7503,3 +7503,1219 @@ Stack Trace:
 #1 {main}
 
 
+2015-10-26 13:09:40 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-10-26 13:13:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index.html could not be found.
+Exception Attributes: array (
+  'class' => 'Index.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/index.html
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:14:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index.html could not be found.
+Exception Attributes: array (
+  'class' => 'Index.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/index.html
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:16:56 Error: [Cake\Controller\Exception\MissingActionException] Action PagesController::home() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'home',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /test-psi2/pages/home
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#2 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-10-26 13:16:58 Error: [Cake\Controller\Exception\MissingActionException] Action PagesController::home() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'home',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /test-psi2/pages/home
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#2 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-10-26 13:17:22 Error: [Cake\Controller\Exception\MissingActionException] Action PagesController::home() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'home',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /test-psi2/pages/home
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#2 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-10-26 13:20:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Anilectivos could not be found.
+Exception Attributes: array (
+  'class' => 'Anilectivos',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/anilectivos
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:21:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Morris.html could not be found.
+Exception Attributes: array (
+  'class' => 'Morris.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/morris.html
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:25 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+Cake\I18n\Time::__toString() - CORE\src\I18n\Time.php, line 628
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 457
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 2032
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:28:25 Warning: Warning (4096): Method Cake\I18n\Time::__toString() must return a string value in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 457]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 457
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 2032
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:28:29 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 81
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:28:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:35 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 81
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:28:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:38 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+include - APP/Template\Alumnos\index.ctp, line 29
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:28:41 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+include - APP/Template\Alumnos\index.ctp, line 29
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:28:45 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 81
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:28:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_flat_55_ffffff_40x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-icons_0073ea_256x240.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_highlight-soft_50_dddddd_1x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_highlight-soft_25_0073ea_1x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:28:49 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 81
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:28:49 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+include - APP/Template\Alumnos\index.ctp, line 29
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:29:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:29:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:29:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:29:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-icons_0073ea_256x240.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:29:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:29:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_flat_55_ffffff_40x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:29:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_highlight-soft_50_dddddd_1x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:29:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_highlight-soft_25_0073ea_1x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:29:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:29:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:29:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_glass_65_ffffff_1x400.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:29:53 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+Cake\I18n\Time::__toString() - CORE\src\I18n\Time.php, line 628
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 457
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 2032
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:29:53 Warning: Warning (4096): Method Cake\I18n\Time::__toString() must return a string value in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 457]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 457
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 2032
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:30:37 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 81
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:30:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:30:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:30:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:30:40 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 81
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:30:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:30:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:30:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:30:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_glass_65_ffffff_1x400.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:30:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:30:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_highlight-soft_50_dddddd_1x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:30:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-icons_0073ea_256x240.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:30:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_highlight-soft_25_0073ea_1x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:30:52 Warning: Warning (2): IntlDateFormatter::format(): datefmt_format: error calling ::getTimeStamp() on the object in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\I18n\Time.php, line 620]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+IntlDateFormatter::format() - [internal], line ??
+Cake\I18n\Time::_formatObject() - CORE\src\I18n\Time.php, line 620
+Cake\I18n\Time::i18nFormat() - CORE\src\I18n\Time.php, line 576
+Cake\I18n\Time::__toString() - CORE\src\I18n\Time.php, line 628
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 457
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 2032
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:30:52 Warning: Warning (4096): Method Cake\I18n\Time::__toString() must return a string value in [C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 457]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 457
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 2032
+App\Controller\AlumnosController::edit() - APP/Controller\AlumnosController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 412
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-26 13:32:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:32:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:32:28 Error: Fatal Error (1): Call to a member function i18nFormat() on a non-object in [C:\wamp\www\test-psi2\src\Controller\AlumnosController.php, line 92]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-10-26 13:32:28 Error: [Cake\Error\FatalErrorException] Call to a member function i18nFormat() on a non-object
+Request URL: /test-psi2/alumnos/edit/4
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\tes...', 92)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-26 13:32:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:32:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:33:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/images/ui-bg_flat_55_ffffff_40x100.png
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:33:03 Error: Fatal Error (1): Call to a member function i18nFormat() on a non-object in [C:\wamp\www\test-psi2\src\Controller\AlumnosController.php, line 92]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-10-26 13:33:04 Error: [Cake\Error\FatalErrorException] Call to a member function i18nFormat() on a non-object
+Request URL: /test-psi2/alumnos/edit/6
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\tes...', 92)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-26 13:33:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:33:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:34:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:34:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:34:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:34:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:37:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:37:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:37:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:37:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:38:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:38:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:41:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Aniolectivo.estado' in 'where clause'
+Request URL: /test-psi2/aniolectivos
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Query.php(176): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(172): Cake\ORM\Query->all()
+#9 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(642): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\AniolectivosTable), Array)
+#10 C:\wamp\www\test-psi2\src\Controller\AniolectivosController.php(30): Cake\Controller\Controller->paginate()
+#11 [internal function]: App\Controller\AniolectivosController->index()
+#12 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#13 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\AniolectivosController))
+#15 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2015-10-26 13:41:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Aniolectivo.estado' in 'where clause'
+Request URL: /test-psi2/aniolectivos
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Database\Query.php(176): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(172): Cake\ORM\Query->all()
+#9 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(642): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\AniolectivosTable), Array)
+#10 C:\wamp\www\test-psi2\src\Controller\AniolectivosController.php(30): Cake\Controller\Controller->paginate()
+#11 [internal function]: App\Controller\AniolectivosController->index()
+#12 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#13 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\AniolectivosController))
+#15 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2015-10-26 13:48:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.structure.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:48:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/css/jquery-ui.theme.min%2Ccss.css
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:53:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class T could not be found.
+Exception Attributes: array (
+  'class' => 'T',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/t/test-psi2/alumnos
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:53:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class T could not be found.
+Exception Attributes: array (
+  'class' => 'T',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/t/test-psi2/alumnos
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:54:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class T could not be found.
+Exception Attributes: array (
+  'class' => 'T',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/t/test-psi2/matriculas
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:54:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class T could not be found.
+Exception Attributes: array (
+  'class' => 'T',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/t/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:54:18 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-10-26 13:54:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class T could not be found.
+Exception Attributes: array (
+  'class' => 'T',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/t/test-psi2/matriculas
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-26 13:54:40 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+

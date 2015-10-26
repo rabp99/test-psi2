@@ -78,9 +78,9 @@ class AlumnosController extends AppController {
     public function edit($id = null) {
         $this->layout = "main";
         $alumno = $this->Alumnos->get($id);
-        $alumno->fecha_nac = $alumno->fecha_nac->i18nFormat("YYYY-MM-dd");
         if ($this->request->is(['patch', 'post', 'put'])) {
             $alumno = $this->Alumnos->patchEntity($alumno, $this->request->data);
+            $alumno->fecha_nac = $this->request->data["fecha_nac"];
             if ($this->Alumnos->save($alumno)) {
                 $this->Flash->success(__('El alumno ha sido registrado correctamente.'));
                 return $this->redirect(['action' => 'index']);
@@ -88,6 +88,7 @@ class AlumnosController extends AppController {
                 $this->Flash->error(__('El alumno no pudo ser registrado. Por favor, inténtalo nuevamente.'));
             }
         }
+        $alumno->fecha_nac = $alumno->fecha_nac->i18nFormat("YYYY-MM-dd");
         $this->set(compact('alumno'));
         $this->set('_serialize', ['alumno']);
     }

@@ -19,8 +19,8 @@
                 </a>
             </li>
             <li>
-                <a href="<?= $this->Url->build(["controller" => "Aniolectivos", "action" => "edit", $grado->id]); ?>">
-                    <span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span> Editar Año Lectivo
+                <a href="<?= $this->Url->build(["controller" => "Aniolectivos", "action" => "view", $aniolectivo->id]); ?>">
+                    <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span> Ver Año Lectivo
                 </a>
             </li>
         </ul>
@@ -32,7 +32,8 @@
         <?php 
             echo $this->Form->input("descripcion", [
                 "label" => "Descripción",
-                "class" => "form-control"
+                "class" => "form-control",
+                "autofocus", "autofocus"
             ]);
             echo $this->Form->button("Registrar", ["class" => "btn btn-default"]);
         ?>

@@ -16,6 +16,7 @@
             <tr>
                 <th><?= $this->Paginator->sort("id") ?></th>
                 <th><?= $this->Paginator->sort("descripcion") ?></th>
+                <th><?= $this->Paginator->sort("nivel") ?></th>
                 <th class="actions"><?= __("Acciones") ?></th>
             </tr>
         </thead>
@@ -25,6 +26,7 @@
                 [
                     $this->Number->format($grado->id),
                     h($grado->descripcion),
+                    h($grado->nivel),
                     $this->Html->link(__('Ver'), ['action' => 'view', $grado->id]) . " | " .
                     $this->Html->link(__('Editar'), ['action' => 'edit', $grado->id]) . " | " .
                     $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $grado->id], ['confirm' => __("¿Estás seguro de deshabilitar el Grado de código {0}?", $grado->id)])

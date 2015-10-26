@@ -8,7 +8,8 @@
         <?php 
             echo $this->Form->input("descripcion", [
                 "label" => "Descripción",
-                "class" => "form-control"
+                "class" => "form-control",
+                "autofocus", "autofocus"
             ]);
             echo $this->Form->button("Registrar", ["class" => "btn btn-default"]);
         ?>

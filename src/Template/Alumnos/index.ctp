@@ -15,7 +15,7 @@
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort("id", "Código") ?></th>
-                <th><?= $this->Paginator->sort('nombre_completo') ?></th>
+                <th><?= $this->Paginator->sort('apellido_paterno', "Nombre Completo") ?></th>
                 <th><?= $this->Paginator->sort('fecha_nac') ?></th>
                 <th class="actions"><?= __('Acciones') ?></th>
             </tr>
