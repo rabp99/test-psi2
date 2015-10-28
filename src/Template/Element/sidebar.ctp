@@ -43,6 +43,14 @@
                     <i class="fa fa-book fa-fw"></i> Matrículas
                 </a>
             </li>
+            <li>
+                <a href="<?= $this->Url->build([
+                    "controller" => "Tests",
+                    "action" => "index"
+                ]); ?>">
+                    <i class="fa fa-file-word-o fa-fw"></i> Tests
+                </a>
+            </li>
         </ul>
     </div>
     <!-- /.sidebar-collapse -->

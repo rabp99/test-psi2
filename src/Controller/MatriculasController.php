@@ -51,6 +51,7 @@ class MatriculasController extends AppController {
         if ($this->request->is('post')) {
             $matricula = $this->Matriculas->patchEntity($matricula, $this->request->data);
             $matricula->alumno = $this->Matriculas->Alumnos->findById($matricula->alumno_id);
+            $matricula->fecha = date("Y-m-d");
             if ($this->Matriculas->save($matricula)) {
                 $this->Flash->success(__("La matrícula ha sido registrada correctamente."));
                 return $this->redirect(['action' => 'index']);
@@ -81,9 +82,12 @@ class MatriculasController extends AppController {
      */
     public function edit($id = null) {
         $this->layout = "main";
-        $matricula = $this->Matriculas->get($id);
+        $matricula = $this->Matriculas->get($id, [
+            'contain' => ['Alumnos']
+        ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $matricula = $this->Matriculas->patchEntity($matricula, $this->request->data);
+            $matricula->alumno = $this->Matriculas->Alumnos->findById($matricula->alumno_id);
             if ($this->Matriculas->save($matricula)) {
                 $this->Flash->success(__("La matrícula  ha sido registrada correctamente."));
                 return $this->redirect(['action' => 'index']);

@@ -15,9 +15,9 @@
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort("id", "Código") ?></th>
-                <th><?= $this->Paginator->sort("nombre_completo", "Alumno") ?></th>
-                <th><?= $this->Paginator->sort('grado', "Grado") ?></th>
-                <th><?= $this->Paginator->sort('aniolectivo', "Año Lectivo") ?></th>
+                <th><?= $this->Paginator->sort("alumno_id", "Alumno") ?></th>
+                <th><?= $this->Paginator->sort('grado_id', "Grado") ?></th>
+                <th><?= $this->Paginator->sort('aniolectivo_id', "Año Lectivo") ?></th>
                 <th><?= $this->Paginator->sort('fecha', "Fecha") ?></th>
                 <th class="actions"><?= __('Acciones') ?></th>
             </tr>
@@ -30,7 +30,7 @@
                     h($matricula->alumno->nombre_completo),
                     h($matricula->grado->descripcion),
                     h($matricula->aniolectivo->descripcion),
-                    h($matricula->fecha),
+                    h($matricula->fecha->i18nFormat("YYYY-MM-dd")),
                     $this->Html->link(__('Ver'), ['action' => 'view', $matricula->id]) . " | " .
                     $this->Html->link(__('Editar'), ['action' => 'edit', $matricula->id]) . " | " .
                     $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $matricula->id], ['confirm' => __('¿Estás seguro de deshabilitar la Matrícula de código {0}?', $matricula->id)])

@@ -9078,3 +9078,81 @@ Stack Trace:
 #1 {main}
 
 
+2015-10-28 04:53:47 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-10-28 04:57:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Matricula could not be found.
+Exception Attributes: array (
+  'class' => 'Matricula',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/matricula
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-28 04:59:17 Error: Fatal Error (1): Call to a member function i18nFormat() on a non-object in [C:\wamp\www\test-psi2\src\Template\Matriculas\index.ctp, line 33]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-10-28 04:59:18 Error: [Cake\Error\FatalErrorException] Call to a member function i18nFormat() on a non-object
+Request URL: /test-psi2/matriculas?sort=aniolectivo_id&direction=desc
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\tes...', 33)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 05:21:30 Error: Fatal Error (1): Class 'App\Controller\Date' not found in [C:\wamp\www\test-psi2\src\Controller\MatriculasController.php, line 54]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-10-28 05:21:30 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\Date' not found
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', 'C:\\wamp\\www\\tes...', 54)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 05:21:58 Error: Fatal Error (1): Class 'App\Controller\DateTime' not found in [C:\wamp\www\test-psi2\src\Controller\MatriculasController.php, line 54]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-10-28 05:21:58 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\DateTime' not found
+Request URL: /test-psi2/matriculas/add
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', 'C:\\wamp\\www\\tes...', 54)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

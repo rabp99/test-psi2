@@ -30,6 +30,9 @@
 <h5><strong>Código</strong></h5>
 <p><?= h($matricula->id) ?></p>
 
+<h5><strong>Alumno</strong></h5>
+<p><?= h($matricula->alumno->nombre_completo) ?></p>
+
 <h5><strong>Grado</strong></h5>
 <p><?= h($matricula->grado->descripcion) ?></p>
 
@@ -39,6 +42,8 @@
 <h5><strong>Año Lectivo</strong></h5>
 <p><?= h($matricula->aniolectivo->descripcion) ?></p>
 
-<h5><strong>Alumno</strong></h5>
-<p><?= h($matricula->alumno->nombre_completo) ?></p>
+<h5><strong>Fecha de Registro</strong></h5>
+<p><?= h($matricula->fecha->i18nFormat("YYYY-MM-dd")) ?></p>
+
+
 <?= $this->Html->link("Lista de Matrículas", ["controller" => "Matriculas", "action" => "index"]) ?>
