@@ -49,9 +49,8 @@ class MatriculasController extends AppController {
         $this->layout = "main";
         $matricula = $this->Matriculas->newEntity();
         if ($this->request->is('post')) {
-            debug($this->request->data);
             $matricula = $this->Matriculas->patchEntity($matricula, $this->request->data);
-            debug($matricula->errors());
+            $matricula->alumno = $this->Matriculas->Alumnos->findById($matricula->alumno_id);
             if ($this->Matriculas->save($matricula)) {
                 $this->Flash->success(__("La matrícula ha sido registrada correctamente."));
                 return $this->redirect(['action' => 'index']);
@@ -81,7 +80,6 @@ class MatriculasController extends AppController {
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null) {
-        
         $this->layout = "main";
         $matricula = $this->Matriculas->get($id);
         if ($this->request->is(['patch', 'post', 'put'])) {

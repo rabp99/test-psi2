@@ -33,6 +33,9 @@
 <h5><strong>Grado</strong></h5>
 <p><?= h($matricula->grado->descripcion) ?></p>
 
+<h5><strong>Nivel</strong></h5>
+<p><?= h($matricula->grado->nivel) ?></p>
+
 <h5><strong>Año Lectivo</strong></h5>
 <p><?= h($matricula->aniolectivo->descripcion) ?></p>
 

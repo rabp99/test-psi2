@@ -8,7 +8,7 @@
         "data-toggle" => "modal",
         "data-target" => "#mdlGetAlumno"
     ]);
-    echo $this->Form->input("alumn.nombreCompleto", [
+    echo $this->Form->input("alumno.nombreCompleto", [
         "label" => "Nombre del Alumno",
         "type" => "text",
         "class" => "form-control",
@@ -28,7 +28,7 @@
             </div>
             <div class="modal-body">
                 <?php
-                    echo $this->Form->input("alumn.busqueda", [
+                    echo $this->Form->input("alumno.busqueda", [
                         "label" => "Buscar",
                         "class" => "form-control",
                         "type" => "search"
@@ -50,7 +50,7 @@
                                 [
                                     $this->Number->format($alumno->id),
                                     h($alumno->nombre_completo),
-                                    h($alumno->fecha_nac),
+                                    h($alumno->fecha_nac->i18nFormat("YYYY-MM-dd")),
                                     $this->Form->button($this->Html->tag("span", "", ["class" => "glyphicon glyphicon-ok"]) . "", ["class" => "btn btn-default seleccionarAlumno", "type" => "button"])
                                 ], [
                                     "class" => "info"
