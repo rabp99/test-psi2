@@ -8,16 +8,15 @@ use App\Controller\AppController;
  *
  * @property \App\Model\Table\TestsTable $Tests
  */
-class TestsController extends AppController
-{
+class TestsController extends AppController {
 
     /**
      * Index method
      *
      * @return void
      */
-    public function index()
-    {
+    public function index() {
+        $this->layout = "main";
         $this->paginate = [
             'contain' => ['Tipos']
         ];

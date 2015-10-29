@@ -1,47 +1,50 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Test'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Tipos'), ['controller' => 'Tipos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Tipo'), ['controller' => 'Tipos', 'action' => 'add']) ?></li>
-    </ul>
-</div>
-<div class="tests index large-10 medium-9 columns">
-    <table cellpadding="0" cellspacing="0">
-    <thead>
-        <tr>
-            <th><?= $this->Paginator->sort('id') ?></th>
-            <th><?= $this->Paginator->sort('tipo_id') ?></th>
-            <th><?= $this->Paginator->sort('descripcion') ?></th>
-            <th><?= $this->Paginator->sort('estado') ?></th>
-            <th class="actions"><?= __('Actions') ?></th>
-        </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($tests as $test): ?>
-        <tr>
-            <td><?= $this->Number->format($test->id) ?></td>
-            <td>
-                <?= $test->has('tipo') ? $this->Html->link($test->tipo->id, ['controller' => 'Tipos', 'action' => 'view', $test->tipo->id]) : '' ?>
-            </td>
-            <td><?= h($test->descripcion) ?></td>
-            <td><?= h($test->estado) ?></td>
-            <td class="actions">
-                <?= $this->Html->link(__('View'), ['action' => 'view', $test->id]) ?>
-                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $test->id]) ?>
-                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $test->id], ['confirm' => __('Are you sure you want to delete # {0}?', $test->id)]) ?>
-            </td>
-        </tr>
+<?php
+    $this->extend("/Common/vista");
+    $this->assign("title", "Alumnos");
+?>
 
-    <?php endforeach; ?>
-    </tbody>
+<?php $this->start("opciones"); ?>
+    <a href="<?= $this->Url->build(["controller" => "Alumnos", "action" => "add"]); ?>" class="btn btn-primary">
+         <span class="glyphicon glyphicon glyphicon-plus" aria-hidden="true"></span> 
+         Nuevo Alumno
+    </a>
+<?php $this->end(); ?>
+
+<div class="dataTable_wrapper">
+    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+        <thead>
+            <tr>
+                <th><?= $this->Paginator->sort("id", "Código") ?></th>
+                <th><?= $this->Paginator->sort('apellido_paterno', "Nombre Completo") ?></th>
+                <th><?= $this->Paginator->sort('fecha_nac') ?></th>
+                <th class="actions"><?= __('Acciones') ?></th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php foreach($alumnos as $alumno) {
+            echo $this->Html->tableCells(
+                [
+                    $this->Number->format($alumno->id),
+                    h($alumno->nombre_completo),
+                    h($alumno->fecha_nac->i18nFormat("YYYY-MM-dd")),
+                    $this->Html->link(__('Ver'), ['action' => 'view', $alumno->id]) . " | " .
+                    $this->Html->link(__('Editar'), ['action' => 'edit', $alumno->id]) . " | " .
+                    $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $alumno->id], ['confirm' => __('¿Estás seguro de deshabilitar el Alumno de código {0}?', $alumno->id)])
+                ], [
+                    "class" => "info"
+                ], [
+                    "class" => "warning"
+                ]
+            );
+        } ?>
+        </tbody>
     </table>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->prev('< ' . __('anterior')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->next(__('siguiente') . ' >') ?>
         </ul>
-        <p><?= $this->Paginator->counter() ?></p>
+        <p><?= $this->Paginator->counter("{{page}} de {{pages}}"); ?></p>
     </div>
 </div>
