@@ -32,6 +32,12 @@
                             "action" => "index"
                         ]); ?>">Alumnos</a>
                     </li>
+                    <li>
+                        <a href="<?= $this->Url->build([
+                            "controller" => "Tipos",
+                            "action" => "index"
+                        ]); ?>">Tipos de Test</a>
+                    </li>
                 </ul>
                 <!-- /.nav-second-level -->
             </li>

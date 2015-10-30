@@ -8,17 +8,27 @@ use App\Controller\AppController;
  *
  * @property \App\Model\Table\TiposTable $Tipos
  */
-class TiposController extends AppController
-{
+class TiposController extends AppController {
 
     /**
      * Index method
      *
      * @return void
      */
-    public function index()
-    {
-        $this->set('tipos', $this->paginate($this->Tipos));
+    public $paginate = [
+        "limit" => 10,
+        "order" => [
+            "Tipos.id" => "asc"
+        ],
+        "conditions" => [
+            "Tipos.estado" => 1
+        ]
+    ];
+    
+    public function index() {
+        $this->layout = "main";
+        
+        $this->set('tipos', $this->paginate());
         $this->set('_serialize', ['tipos']);
     }
 

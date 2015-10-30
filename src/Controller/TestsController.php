@@ -15,8 +15,19 @@ class TestsController extends AppController {
      *
      * @return void
      */
+    public $paginate = [
+        "limit" => 10,
+        "order" => [
+            "Alumnos.nombre_completo" => "asc"
+        ],
+        "conditions" => [
+            "Alumnos.estado" => 1
+        ]
+    ];
+    
     public function index() {
         $this->layout = "main";
+        
         $this->paginate = [
             'contain' => ['Tipos']
         ];

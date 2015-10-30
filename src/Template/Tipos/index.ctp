@@ -1,43 +1,48 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Tipo'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Tests'), ['controller' => 'Tests', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Test'), ['controller' => 'Tests', 'action' => 'add']) ?></li>
-    </ul>
-</div>
-<div class="tipos index large-10 medium-9 columns">
-    <table cellpadding="0" cellspacing="0">
-    <thead>
-        <tr>
-            <th><?= $this->Paginator->sort('id') ?></th>
-            <th><?= $this->Paginator->sort('descripcion') ?></th>
-            <th><?= $this->Paginator->sort('estado') ?></th>
-            <th class="actions"><?= __('Actions') ?></th>
-        </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($tipos as $tipo): ?>
-        <tr>
-            <td><?= $this->Number->format($tipo->id) ?></td>
-            <td><?= h($tipo->descripcion) ?></td>
-            <td><?= h($tipo->estado) ?></td>
-            <td class="actions">
-                <?= $this->Html->link(__('View'), ['action' => 'view', $tipo->id]) ?>
-                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $tipo->id]) ?>
-                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $tipo->id], ['confirm' => __('Are you sure you want to delete # {0}?', $tipo->id)]) ?>
-            </td>
-        </tr>
+<?php
+    $this->extend("/Common/vista");
+    $this->assign("title", "Tipos de Test");
+?>
 
-    <?php endforeach; ?>
-    </tbody>
+<?php $this->start("opciones"); ?>
+    <a href="<?= $this->Url->build(["controller" => "Tipos", "action" => "add"]); ?>" class="btn btn-primary">
+         <span class="glyphicon glyphicon glyphicon-plus" aria-hidden="true"></span> 
+         Nuevo Tipo de Test
+    </a>
+<?php $this->end(); ?>
+
+<div class="dataTable_wrapper">
+    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+        <thead>
+            <tr>
+                <th><?= $this->Paginator->sort("id", "Código") ?></th>
+                <th><?= $this->Paginator->sort('descripcion', "Descripción") ?></th>
+                <th class="actions"><?= __('Acciones') ?></th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php foreach($tipos as $tipo) {
+            echo $this->Html->tableCells(
+                [
+                    $this->Number->format($tipo->id),
+                    h($tipo->descripcion),
+                    $this->Html->link(__('Ver'), ['action' => 'view', $tipo->id]) . " | " .
+                    $this->Html->link(__('Editar'), ['action' => 'edit', $tipo->id]) . " | " .
+                    $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $tipo->id], ['confirm' => __('¿Estás seguro de deshabilitar el Alumno de código {0}?', $tipo->id)])
+                ], [
+                    "class" => "info"
+                ], [
+                    "class" => "warning"
+                ]
+            );
+        } ?>
+        </tbody>
     </table>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->prev('< ' . __('anterior')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->next(__('siguiente') . ' >') ?>
         </ul>
-        <p><?= $this->Paginator->counter() ?></p>
+        <p><?= $this->Paginator->counter("{{page}} de {{pages}}"); ?></p>
     </div>
 </div>
