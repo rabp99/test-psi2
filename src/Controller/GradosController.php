@@ -9,12 +9,6 @@ use App\Controller\AppController;
  * @property \App\Model\Table\GradosTable $Grados
  */
 class GradosController extends AppController {
-
-    /**
-     * Index method
-     *
-     * @return void
-     */
     public $paginate = [
         "limit" => 10,
         "order" => [
@@ -25,6 +19,11 @@ class GradosController extends AppController {
         ]
     ];
         
+    /**
+     * Index method
+     *
+     * @return void
+     */
     public function index() {
         $this->layout = "main";
         $this->set('grados', $this->paginate());

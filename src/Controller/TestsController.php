@@ -18,19 +18,16 @@ class TestsController extends AppController {
     public $paginate = [
         "limit" => 10,
         "order" => [
-            "Alumnos.nombre_completo" => "asc"
+            "Tests.nombre_prueba" => "asc"
         ],
         "conditions" => [
-            "Alumnos.estado" => 1
+            "Tests.estado" => 1
         ]
     ];
     
     public function index() {
         $this->layout = "main";
         
-        $this->paginate = [
-            'contain' => ['Tipos']
-        ];
         $this->set('tests', $this->paginate($this->Tests));
         $this->set('_serialize', ['tests']);
     }

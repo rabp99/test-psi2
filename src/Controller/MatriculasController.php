@@ -9,7 +9,16 @@ use App\Controller\AppController;
  * @property \App\Model\Table\MatriculasTable $Matriculas
  */
 class MatriculasController extends AppController {
-
+    public $paginate = [
+        "limit" => 10,
+        "order" => [
+            "Matriculas.alumno_id" => "asc"
+        ],
+        "contain" => ["Alumnos", "Grados", "Aniolectivos"],
+        "conditions" => [
+            "Matriculas.estado" => 1
+        ]
+    ];
     /**
      * Index method
      *
@@ -17,10 +26,7 @@ class MatriculasController extends AppController {
      */
     public function index() {
         $this->layout = "main";
-        $this->set('matriculas', $this->paginate($this->Matriculas->find("all")
-            ->where(["Matriculas.estado" => 1])
-            ->contain(["Alumnos", "Grados", "Aniolectivos"])
-        ));
+        $this->set('matriculas', $this->paginate());
         $this->set('_serialize', ['matriculas']);
     }
 
@@ -59,10 +65,7 @@ class MatriculasController extends AppController {
                 $this->Flash->error(__('La matrícula no pudo ser registrada. Por favor, inténtalo nuevamente.'));
             }
         }
-        $grados = $this->Matriculas->Grados->find("list", [
-            "keyField" => "id",
-            'valueField' => "descripcion"
-        ]);
+        $grados = $this->Matriculas->Grados->find("list");
         $aniolectivos = $this->Matriculas->Aniolectivos->find('list', [
             "keyField" => "id",
             'valueField' => "descripcion"

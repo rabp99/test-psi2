@@ -27,7 +27,7 @@ class AlumnosTable extends Table
 
         $this->table('alumnos');
         $this->displayField('id');
-        $this->primaryKey('id');
+        $this->primaryKey("nombre_completo");
 
         $this->hasMany('Matriculas', [
             'foreignKey' => 'alumno_id'

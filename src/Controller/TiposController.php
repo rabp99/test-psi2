@@ -53,16 +53,17 @@ class TiposController extends AppController {
      *
      * @return void Redirects on successful add, renders view otherwise.
      */
-    public function add()
-    {
+    public function add() {
+        $this->layout = "main";
+        
         $tipo = $this->Tipos->newEntity();
         if ($this->request->is('post')) {
             $tipo = $this->Tipos->patchEntity($tipo, $this->request->data);
             if ($this->Tipos->save($tipo)) {
-                $this->Flash->success(__('The tipo has been saved.'));
+                $this->Flash->success(__("El Tipo de Test ha sido registrado correctamente."));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The tipo could not be saved. Please, try again.'));
+                $this->Flash->error(__('El Tipo de Test no pudo ser registrado. Por favor, inténtalo nuevamente.'));
             }
         }
         $this->set(compact('tipo'));

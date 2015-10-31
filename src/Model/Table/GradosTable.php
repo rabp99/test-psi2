@@ -12,8 +12,7 @@ use Cake\Validation\Validator;
  *
  * @property \Cake\ORM\Association\HasMany $Matriculas
  */
-class GradosTable extends Table
-{
+class GradosTable extends Table {
 
     /**
      * Initialize method
@@ -26,7 +25,7 @@ class GradosTable extends Table
         parent::initialize($config);
 
         $this->table('grados');
-        $this->displayField('id');
+        $this->displayField('descripcion');
         $this->primaryKey('id');
 
         $this->hasMany('Matriculas', [

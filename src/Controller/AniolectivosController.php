@@ -9,12 +9,6 @@ use App\Controller\AppController;
  * @property \App\Model\Table\AniolectivosTable $Aniolectivos
  */
 class AniolectivosController extends AppController {
-
-    /**
-     * Index method
-     *
-     * @return void
-     */
     public $paginate = [
         "limit" => 10,
         "order" => [
@@ -24,6 +18,11 @@ class AniolectivosController extends AppController {
             "Aniolectivos.estado" => 1
         ]
     ];
+    /**
+     * Index method
+     *
+     * @return void
+     */
         
     public function index() {
         $this->layout = "main";
