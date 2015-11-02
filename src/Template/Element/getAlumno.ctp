@@ -8,13 +8,14 @@
         "data-toggle" => "modal",
         "data-target" => "#mdlGetAlumno"
     ]);
-    echo $this->Form->input("alumno.nombreCompleto", [
+    echo $this->Form->input("nombreCompleto", [
         "label" => "Nombre del Alumno",
         "type" => "text",
         "class" => "form-control",
         "readonly" => true,
         "data-toggle" => "modal",
-        "data-target" => "#mdlGetAlumno"
+        "data-target" => "#mdlGetAlumno",
+        "value" => @$matricula->alumno->nombre_completo
     ]);
 ?>
 
@@ -28,7 +29,7 @@
             </div>
             <div class="modal-body">
                 <?php
-                    echo $this->Form->input("alumno.busqueda", [
+                    echo $this->Form->input("busqueda", [
                         "label" => "Buscar",
                         "class" => "form-control",
                         "type" => "search"
@@ -75,8 +76,8 @@
         var id = $(this).parent().parent().find("td:eq(0)").text();
         var nombreCompleto = $(this).parent().parent().find("td:eq(1)").text(); 
         $("#alumno-id").val(id);
-        $("#alumno-nombrecompleto").val(nombreCompleto);
-        $("#alumno-busqueda").val("");
+        $("#nombrecompleto").val(nombreCompleto);
+        $("#busqueda").val("");
         $("#mdlGetAlumno").modal('toggle');
     }); 
     $("#alumno-busqueda").keyup(function() {

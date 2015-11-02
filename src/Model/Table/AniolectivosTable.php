@@ -21,12 +21,11 @@ class AniolectivosTable extends Table
      * @param array $config The configuration for the Table.
      * @return void
      */
-    public function initialize(array $config)
-    {
+    public function initialize(array $config) {
         parent::initialize($config);
 
         $this->table('aniolectivos');
-        $this->displayField('id');
+        $this->displayField('descripcion');
         $this->primaryKey('id');
 
         $this->hasMany('Matriculas', [

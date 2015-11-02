@@ -26,8 +26,8 @@ class AlumnosTable extends Table
         parent::initialize($config);
 
         $this->table('alumnos');
-        $this->displayField('id');
-        $this->primaryKey("nombre_completo");
+        $this->displayField('nombre_completo');
+        $this->primaryKey("id");
 
         $this->hasMany('Matriculas', [
             'foreignKey' => 'alumno_id'

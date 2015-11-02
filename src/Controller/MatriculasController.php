@@ -56,7 +56,6 @@ class MatriculasController extends AppController {
         $matricula = $this->Matriculas->newEntity();
         if ($this->request->is('post')) {
             $matricula = $this->Matriculas->patchEntity($matricula, $this->request->data);
-            $matricula->alumno = $this->Matriculas->Alumnos->findById($matricula->alumno_id);
             $matricula->fecha = date("Y-m-d");
             if ($this->Matriculas->save($matricula)) {
                 $this->Flash->success(__("La matrícula ha sido registrada correctamente."));
@@ -65,11 +64,10 @@ class MatriculasController extends AppController {
                 $this->Flash->error(__('La matrícula no pudo ser registrada. Por favor, inténtalo nuevamente.'));
             }
         }
-        $grados = $this->Matriculas->Grados->find("list");
-        $aniolectivos = $this->Matriculas->Aniolectivos->find('list', [
-            "keyField" => "id",
-            'valueField' => "descripcion"
-        ]);
+        $grados = $this->Matriculas->Grados->find("list")
+            ->where(['Grados.estado' => 1]);
+        $aniolectivos = $this->Matriculas->Aniolectivos->find('list')
+            ->where(['Aniolectivos.estado' => 1]);
         $alumnos = $this->Matriculas->Alumnos->find("all")
             ->where(['Alumnos.estado' => 1]);
         $this->set(compact('matricula', 'grados', 'aniolectivos', 'alumnos'));
@@ -90,7 +88,6 @@ class MatriculasController extends AppController {
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $matricula = $this->Matriculas->patchEntity($matricula, $this->request->data);
-            $matricula->alumno = $this->Matriculas->Alumnos->findById($matricula->alumno_id);
             if ($this->Matriculas->save($matricula)) {
                 $this->Flash->success(__("La matrícula  ha sido registrada correctamente."));
                 return $this->redirect(['action' => 'index']);
@@ -98,15 +95,10 @@ class MatriculasController extends AppController {
                 $this->Flash->error(__('La matrícula no pudo ser registrada. Por favor, inténtalo nuevamente.'));
             }
         }
-
-        $grados = $this->Matriculas->Grados->find("list", [
-            "keyField" => "id",
-            'valueField' => "descripcion"
-        ]);
-        $aniolectivos = $this->Matriculas->Aniolectivos->find('list', [
-            "keyField" => "id",
-            'valueField' => "descripcion"
-        ]);
+        $grados = $this->Matriculas->Grados->find("list")
+            ->where(['Grados.estado' => 1]);
+        $aniolectivos = $this->Matriculas->Aniolectivos->find('list')
+            ->where(['Aniolectivos.estado' => 1]);
         $alumnos = $this->Matriculas->Alumnos->find("all")
             ->where(['Alumnos.estado' => 1]);
         $this->set(compact('matricula', 'grados', 'aniolectivos', 'alumnos'));

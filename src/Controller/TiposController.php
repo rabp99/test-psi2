@@ -39,15 +39,13 @@ class TiposController extends AppController {
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function view($id = null)
-    {
-        $tipo = $this->Tipos->get($id, [
-            'contain' => ['Tests']
-        ]);
+    public function view($id = null) {
+        $this->layout = "main";
+        $tipo = $this->Tipos->get($id);
         $this->set('tipo', $tipo);
         $this->set('_serialize', ['tipo']);
     }
-
+    
     /**
      * Add method
      *
@@ -77,18 +75,16 @@ class TiposController extends AppController {
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null)
-    {
-        $tipo = $this->Tipos->get($id, [
-            'contain' => []
-        ]);
+    public function edit($id = null) {
+        $this->layout = "main";
+        $tipo = $this->Tipos->get($id);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $tipo = $this->Tipos->patchEntity($tipo, $this->request->data);
             if ($this->Tipos->save($tipo)) {
-                $this->Flash->success(__('The tipo has been saved.'));
+                $this->Flash->success(__('El Tipo de Test ha sido registrado correctamente.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The tipo could not be saved. Please, try again.'));
+                $this->Flash->error(__('El Tipo de Test no pudo ser registrado. Por favor, inténtalo nuevamente.'));
             }
         }
         $this->set(compact('tipo'));
@@ -102,14 +98,14 @@ class TiposController extends AppController {
      * @return void Redirects to index.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function delete($id = null)
-    {
+    public function delete($id = null) {
         $this->request->allowMethod(['post', 'delete']);
         $tipo = $this->Tipos->get($id);
-        if ($this->Tipos->delete($tipo)) {
-            $this->Flash->success(__('The tipo has been deleted.'));
+        $tipo->estado = 2;
+        if ($this->Tipos->save($tipo)) {
+            $this->Flash->success(__('El Tipo de Test ha sido deshabilitado.'));
         } else {
-            $this->Flash->error(__('The tipo could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El Tipo de Test no pudo ser deshabilitado. Por favor, inténtalo nuevamente.'));
         }
         return $this->redirect(['action' => 'index']);
     }

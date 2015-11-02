@@ -33,4 +33,7 @@
 <h5><strong>Descripción</strong></h5>
 <p><?= h($grado->descripcion) ?></p>
 
+<h5><strong>Nivel</strong></h5>
+<p><?= h($grado->nivel) ?></p>
+
 <?= $this->Html->link("Lista de Grados", ["controller" => "Grados", "action" => "index"]) ?>

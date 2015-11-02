@@ -27,7 +27,7 @@
                     h($tipo->descripcion),
                     $this->Html->link(__('Ver'), ['action' => 'view', $tipo->id]) . " | " .
                     $this->Html->link(__('Editar'), ['action' => 'edit', $tipo->id]) . " | " .
-                    $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $tipo->id], ['confirm' => __('¿Estás seguro de deshabilitar el Alumno de código {0}?', $tipo->id)])
+                    $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $tipo->id], ['confirm' => __('¿Estás seguro de deshabilitar el Tipo de Test de código {0}?', $tipo->id)])
                 ], [
                     "class" => "info"
                 ], [
