@@ -26,7 +26,7 @@ class TiposTable extends Table
         parent::initialize($config);
 
         $this->table('tipos');
-        $this->displayField('id');
+        $this->displayField('descripcion');
         $this->primaryKey('id');
 
         $this->hasMany('Tests', [
@@ -49,9 +49,6 @@ class TiposTable extends Table
         $validator
             ->requirePresence('descripcion', 'create')
             ->notEmpty('descripcion');
-
-        $validator
-            ->allowEmpty('estado');
 
         return $validator;
     }

@@ -19,7 +19,6 @@ class Test extends Entity
      */
     protected $_accessible = [
         '*' => true,
-        'id' => false,
-        'tipo_id' => false,
+        'id' => false
     ];
 }

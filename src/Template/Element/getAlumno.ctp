@@ -3,7 +3,6 @@
     echo $this->Form->input("alumno_id", [
         "label" => "Código del Alumno",
         "type" => "text",
-        "class" => "form-control",
         "readonly" => true,
         "data-toggle" => "modal",
         "data-target" => "#mdlGetAlumno"
@@ -11,7 +10,6 @@
     echo $this->Form->input("nombreCompleto", [
         "label" => "Nombre del Alumno",
         "type" => "text",
-        "class" => "form-control",
         "readonly" => true,
         "data-toggle" => "modal",
         "data-target" => "#mdlGetAlumno",
@@ -31,7 +29,6 @@
                 <?php
                     echo $this->Form->input("busqueda", [
                         "label" => "Buscar",
-                        "class" => "form-control",
                         "type" => "search"
                     ]);
                 ?>

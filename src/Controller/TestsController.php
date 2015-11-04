@@ -53,8 +53,9 @@ class TestsController extends AppController {
      *
      * @return void Redirects on successful add, renders view otherwise.
      */
-    public function add()
-    {
+    public function add() {
+        $this->layout = "main";
+        
         $test = $this->Tests->newEntity();
         if ($this->request->is('post')) {
             $test = $this->Tests->patchEntity($test, $this->request->data);
@@ -62,10 +63,12 @@ class TestsController extends AppController {
                 $this->Flash->success(__('The test has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
+                debug($test);
                 $this->Flash->error(__('The test could not be saved. Please, try again.'));
             }
         }
-        $tipos = $this->Tests->Tipos->find('list', ['limit' => 200]);
+        $tipos = $this->Tests->Tipos->find("list")
+            ->where(['Tipos.estado' => 1]);
         $this->set(compact('test', 'tipos'));
         $this->set('_serialize', ['test']);
     }

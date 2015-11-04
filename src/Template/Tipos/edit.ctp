@@ -28,11 +28,13 @@
 <?php $this->end(); ?>
 
 <?= $this->Form->create($tipo) ?>
+<?php $this->Form->templates([
+    "input" => "<input type='{{type}}' name='{{name}}' {{attrs}} class='form-control' />"
+]) ?>
     <div class="form-group">
         <?php 
             echo $this->Form->input("descripcion", [
                 "label" => "Descripción",
-                "class" => "form-control",
                 "autofocus", "autofocus"
             ]);
             echo $this->Form->button("Registrar", ["class" => "btn btn-default"]);

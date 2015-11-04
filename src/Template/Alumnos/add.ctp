@@ -11,24 +11,16 @@
 ?>
 
 <?= $this->Form->create($alumno) ?>
+<?php $this->Form->templates(["input" => "<input type='{{type}}' name='{{name}}' {{attrs}} class='form-control' />"]) ?>
     <div class="form-group">
         <?php 
             echo $this->Form->input("nombres", [
-                "label" => "Nombres",
-                "class" => "form-control",
                 "autofocus" => "autofocus"
             ]);
-            echo $this->Form->input("apellido_paterno", [
-                "label" => "Apellido Paterno",
-                "class" => "form-control"
-            ]); 
-            echo $this->Form->input("apellido_materno", [
-                "label" => "Apellido Materno",
-                "class" => "form-control"
-            ]); 
+            echo $this->Form->input("apellido_paterno");
+            echo $this->Form->input("apellido_materno"); 
             echo $this->Form->input("fecha_nac", [
                 "label" => "Fecha de Nacimiento",
-                "class" => "form-control",
                 "type" => "text"
             ]); 
             echo $this->Form->button("Registrar", ["class" => "btn btn-default"]);

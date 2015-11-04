@@ -4,16 +4,18 @@
 ?>
 
 <?= $this->Form->create($matricula) ?>
+<?php $this->Form->templates([
+    "input" => "<input type='{{type}}' name='{{name}}' {{attrs}} class='form-control' />",
+    "select" => "<select name='{{name}}' {{attrs}} class='form-control'>{{content}}</select>"
+]) ?>
     <div class="form-group">
         <?php 
             echo $this->Form->input("aniolectivo_id", [
                 "label" => "Año Lectivo",
-                "class" => "form-control",
                 "empty" => "Selecciona uno"
             ]);
             echo $this->Form->input("grado_id", [
                 "label" => "Grado",
-                "class" => "form-control",
                 "empty" => "Selecciona uno"
             ]);
             echo $this->element("getAlumno");

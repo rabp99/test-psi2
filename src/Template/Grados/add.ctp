@@ -4,16 +4,17 @@
 ?>
 
 <?= $this->Form->create($grado) ?>
+<?php $this->Form->templates([
+    "input" => "<input type='{{type}}' name='{{name}}' {{attrs}} class='form-control' />",
+    "select" => "<select name='{{name}}' {{attrs}} class='form-control'>{{content}}</select>"
+]) ?>
     <div class="form-group">
         <?php 
             echo $this->Form->input("descripcion", [
                 "label" => "Descripción",
-                "class" => "form-control",
                 "autofocus", "autofocus"
             ]);
             echo $this->Form->input("nivel", [
-               "label" => "Nivel",
-                "class" => "form-control",
                 "options" => [
                     "Inicial" => "Inicial",
                     "Primaria" => "Primaria",

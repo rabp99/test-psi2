@@ -21,8 +21,7 @@ class TestsTable extends Table
      * @param array $config The configuration for the Table.
      * @return void
      */
-    public function initialize(array $config)
-    {
+    public function initialize(array $config) {
         parent::initialize($config);
 
         $this->table('tests');
@@ -46,13 +45,6 @@ class TestsTable extends Table
         $validator
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create');
-
-        $validator
-            ->requirePresence('descripcion', 'create')
-            ->notEmpty('descripcion');
-
-        $validator
-            ->allowEmpty('estado');
 
         return $validator;
     }

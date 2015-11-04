@@ -1,15 +1,15 @@
 <?php
     $this->extend("/Common/vista");
-    $this->assign("title", "Alumnos");
+    $this->assign("title", "Tests");
 ?>
 
 <?php $this->start("opciones"); ?>
-    <a href="<?= $this->Url->build(["controller" => "Alumnos", "action" => "add"]); ?>" class="btn btn-primary">
+    <a href="<?= $this->Url->build(["controller" => "Tests", "action" => "add"]); ?>" class="btn btn-primary">
          <span class="glyphicon glyphicon glyphicon-plus" aria-hidden="true"></span> 
-         Nuevo Alumno
+         Nuevo Test
     </a>
 <?php $this->end(); ?>
-
+<!--
 <div class="dataTable_wrapper">
     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
         <thead>
@@ -48,3 +48,4 @@
         <p><?= $this->Paginator->counter("{{page}} de {{pages}}"); ?></p>
     </div>
 </div>
+-->
