@@ -33,7 +33,4 @@
 <h5><strong>Nombre de Prueba</strong></h5>
 <p><?= h($test->nombre_prueba) ?></p>
 
-<h5><strong>Nivel</strong></h5>
-<p><?= h($grado->nivel) ?></p>
-
-<?= $this->Html->link("Lista de Grados", ["controller" => "Grados", "action" => "index"]) ?>
+<?= $this->Html->link("Lista de Tests", ["controller" => "Tests", "action" => "index"]) ?>

@@ -12,8 +12,7 @@ use Cake\Validation\Validator;
  *
  * @property \Cake\ORM\Association\BelongsTo $Tipos
  */
-class TestsTable extends Table
-{
+class TestsTable extends Table {
 
     /**
      * Initialize method
@@ -26,7 +25,7 @@ class TestsTable extends Table
 
         $this->table('tests');
         $this->displayField('id');
-        $this->primaryKey(['id', 'tipo_id']);
+        $this->primaryKey('id');
 
         $this->belongsTo('Tipos', [
             'foreignKey' => 'tipo_id',

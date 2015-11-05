@@ -28,7 +28,7 @@ class TestsController extends AppController {
     public function index() {
         $this->layout = "main";
         
-        $this->set('tests', $this->paginate($this->Tests));
+        $this->set('tests', $this->paginate());
         $this->set('_serialize', ['tests']);
     }
 
@@ -39,8 +39,9 @@ class TestsController extends AppController {
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function view($id = null)
-    {
+    public function view($id = null) {
+        $this->layout = "main";
+        
         $test = $this->Tests->get($id, [
             'contain' => ['Tipos']
         ]);
@@ -60,11 +61,11 @@ class TestsController extends AppController {
         if ($this->request->is('post')) {
             $test = $this->Tests->patchEntity($test, $this->request->data);
             if ($this->Tests->save($test)) {
-                $this->Flash->success(__('The test has been saved.'));
+                $this->Flash->success(__("El Test ha sido registrado correctamente."));
                 return $this->redirect(['action' => 'index']);
             } else {
                 debug($test);
-                $this->Flash->error(__('The test could not be saved. Please, try again.'));
+                $this->Flash->error(__('El Test no pudo ser registrado. Por favor, inténtalo nuevamente.'));
             }
         }
         $tipos = $this->Tests->Tipos->find("list")
@@ -80,18 +81,17 @@ class TestsController extends AppController {
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null)
-    {
-        $test = $this->Tests->get($id, [
-            'contain' => []
-        ]);
+    public function edit($id = null) {
+        $this->layout = "main";
+        
+        $test = $this->Tests->get($id);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $test = $this->Tests->patchEntity($test, $this->request->data);
             if ($this->Tests->save($test)) {
-                $this->Flash->success(__('The test has been saved.'));
+                $this->Flash->success(__("El Test ha sido registrado correctamente."));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The test could not be saved. Please, try again.'));
+                $this->Flash->error(__('El Test no pudo ser registrado. Por favor, inténtalo nuevamente.'));
             }
         }
         $tipos = $this->Tests->Tipos->find('list', ['limit' => 200]);
@@ -106,8 +106,7 @@ class TestsController extends AppController {
      * @return void Redirects to index.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function delete($id = null)
-    {
+    public function delete($id = null) {
         $this->request->allowMethod(['post', 'delete']);
         $test = $this->Tests->get($id);
         if ($this->Tests->delete($test)) {
@@ -116,5 +115,15 @@ class TestsController extends AppController {
             $this->Flash->error(__('The test could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+    }
+    
+    public function detalle($id = null) {
+        $this->layout = "main";
+        
+        $test = $this->Tests->get($id, [
+            'contain' => ['Tipos']
+        ]);
+        $this->set('test', $test);
+        $this->set('_serialize', ['test']);
     }
 }

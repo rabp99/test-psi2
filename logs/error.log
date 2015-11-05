@@ -10298,3 +10298,166 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2015-11-05 00:53:50 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-11-05 00:54:44 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\test-psi2\src\Template\Tests\index.ctp, line 24]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Tests\index.ctp, line 24
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-11-05 01:02:41 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tests" with primary key ['2']
+Request URL: /test-psi2/tests/view/2
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\TestsController.php(46): Cake\ORM\Table->get('2', Array)
+#1 [internal function]: App\Controller\TestsController->view('2')
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-11-05 01:02:54 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tests" with primary key ['2']
+Request URL: /test-psi2/tests/edit/2
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\TestsController.php(87): Cake\ORM\Table->get('2', Array)
+#1 [internal function]: App\Controller\TestsController->edit('2')
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-11-05 01:05:18 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tests" with primary key ['2']
+Request URL: /test-psi2/tests/view/2
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\TestsController.php(47): Cake\ORM\Table->get('2', Array)
+#1 [internal function]: App\Controller\TestsController->view('2')
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-11-05 01:07:10 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tests" with primary key ['2']
+Request URL: /test-psi2/tests/view/2
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\TestsController.php(47): Cake\ORM\Table->get('2', Array)
+#1 [internal function]: App\Controller\TestsController->view('2')
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-11-05 01:09:36 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tests" with primary key ['2']
+Request URL: /test-psi2/tests/detalle/2
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\TestsController.php(125): Cake\ORM\Table->get('2', Array)
+#1 [internal function]: App\Controller\TestsController->detalle('2')
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-11-05 01:09:42 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tests" with primary key ['2']
+Request URL: /test-psi2/tests/view/2
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\TestsController.php(47): Cake\ORM\Table->get('2', Array)
+#1 [internal function]: App\Controller\TestsController->view('2')
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-11-05 01:11:01 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tests" with primary key ['2']
+Request URL: /test-psi2/tests/view/2
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\TestsController.php(45): Cake\ORM\Table->get('2')
+#1 [internal function]: App\Controller\TestsController->view('2')
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-11-05 01:11:03 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tests" with primary key ['2']
+Request URL: /test-psi2/tests/view/2
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\TestsController.php(45): Cake\ORM\Table->get('2')
+#1 [internal function]: App\Controller\TestsController->view('2')
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-11-05 01:12:52 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tests" with primary key ['2']
+Request URL: /test-psi2/tests/view/2
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\TestsController.php(47): Cake\ORM\Table->get('2', Array)
+#1 [internal function]: App\Controller\TestsController->view('2')
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-11-05 01:13:32 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tests" with primary key ['1']
+Request URL: /test-psi2/tests/view/1
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\TestsController.php(47): Cake\ORM\Table->get('1', Array)
+#1 [internal function]: App\Controller\TestsController->view('1')
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-11-05 01:13:37 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tests" with primary key ['1']
+Request URL: /test-psi2/tests/view/1
+Stack Trace:
+#0 C:\wamp\www\test-psi2\src\Controller\TestsController.php(47): Cake\ORM\Table->get('1', Array)
+#1 [internal function]: App\Controller\TestsController->view('1')
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Controller\Controller.php(412): call_user_func_array(Array, Array)
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TestsController))
+#5 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+

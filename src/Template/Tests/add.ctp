@@ -16,8 +16,7 @@
             ]);
             echo $this->Form->input("tipo_id", [
                 "label" => "Tipo",
-                "empty" => "Seleccionar",
-                "type" => "select"
+                "empty" => "Seleccionar"
             ]);
             echo $this->Form->input("autores");
             echo $this->Form->input("administracion", [
@@ -41,6 +40,7 @@
             echo $this->Form->input("documentacion", [
                 "label" => "Documentación"
             ]);
+            echo $this->Form->button("Registrar", ["class" => "btn btn-default"]);
         ?>
     </div>
 <?= $this->Form->end() ?>

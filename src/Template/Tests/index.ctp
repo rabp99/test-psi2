@@ -9,27 +9,26 @@
          Nuevo Test
     </a>
 <?php $this->end(); ?>
-<!--
+
 <div class="dataTable_wrapper">
     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort("id", "Código") ?></th>
-                <th><?= $this->Paginator->sort('apellido_paterno', "Nombre Completo") ?></th>
-                <th><?= $this->Paginator->sort('fecha_nac') ?></th>
+                <th><?= $this->Paginator->sort('nombre_prueba', "Nombre de Prueba") ?></th>
                 <th class="actions"><?= __('Acciones') ?></th>
             </tr>
         </thead>
         <tbody>
-        <?php foreach($alumnos as $alumno) {
+        <?php foreach($tests as $test) {
             echo $this->Html->tableCells(
                 [
-                    $this->Number->format($alumno->id),
-                    h($alumno->nombre_completo),
-                    h($alumno->fecha_nac->i18nFormat("YYYY-MM-dd")),
-                    $this->Html->link(__('Ver'), ['action' => 'view', $alumno->id]) . " | " .
-                    $this->Html->link(__('Editar'), ['action' => 'edit', $alumno->id]) . " | " .
-                    $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $alumno->id], ['confirm' => __('¿Estás seguro de deshabilitar el Alumno de código {0}?', $alumno->id)])
+                    h($test->id),
+                    h($test->nombre_prueba),
+                    $this->Html->link(__('Ver'), ['action' => 'view', $test->id]) . " | " .
+                    $this->Html->link(__('Editar'), ['action' => 'edit', $test->id]) . " | " .
+                    $this->Html->link(__('Detalle'), ['action' => 'detalle', $test->id]) . " | " .
+                    $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $test->id], ['confirm' => __('¿Estás seguro de deshabilitar el Test de código {0}?', $test->id)])
                 ], [
                     "class" => "info"
                 ], [
@@ -48,4 +47,3 @@
         <p><?= $this->Paginator->counter("{{page}} de {{pages}}"); ?></p>
     </div>
 </div>
--->
