@@ -33,4 +33,30 @@
 <h5><strong>Nombre de Prueba</strong></h5>
 <p><?= h($test->nombre_prueba) ?></p>
 
+<?= $this->Form->create($test) ?>
+<?php $this->Form->templates([
+    "input" => "<input type='{{type}}' name='{{name}}' {{attrs}} class='form-control' />",
+    "select" => "<select name='{{name}}' {{attrs}} class='form-control'>{{content}}</select>",
+    "textarea" => "<textarea class='form-control' name='{{name}}' {{attrs}}>{{value}}</textarea>"
+]) ?>
+<div class="form-group input-group">
+    <input id="txtPregunta" type="text" class="form-control">
+    <span class="input-group-btn">
+        <button id="btnAgregarPregunta" class="btn btn-default" type="button"><i class="fa fa-plus"></i>
+        </button>
+    </span>
+</div>
+<ol id="olPreguntas">
+</ol>
+<?= $this->Form->end() ?>
 <?= $this->Html->link("Lista de Tests", ["controller" => "Tests", "action" => "index"]) ?>
+
+
+<?php echo $this->Html->scriptStart(["block" => "script"]); ?>
+    $(document).ready(function() {
+    alert("dsadas");
+        $("#btnAgregarPregunta").click(function() {
+            $("#olPreguntas").append("<li>" + $("#txtPregunta").val() + "</li>");
+        });
+    });
+<?php echo $this->Html->scriptEnd(); ?>

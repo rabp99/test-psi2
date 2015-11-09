@@ -10461,3 +10461,65 @@ Stack Trace:
 #6 {main}
 
 
+2015-11-07 20:32:38 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-11-07 21:05:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /test-psi2/js/jquery.min.map
+Stack Trace:
+#0 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-09 05:24:11 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /test-psi2/
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Router.php(340): Cake\Routing\RouteCollection->parse('/')
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Filter\RoutingFilter.php(53): Cake\Routing\Router::parse(false)
+#2 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#3 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#5 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#6 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#7 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-11-09 05:24:29 Error: [Cake\Controller\Exception\MissingActionException] Action PagesController::home() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'home',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /test-psi2/pages/home
+Stack Trace:
+#0 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\test-psi2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#2 C:\wamp\www\test-psi2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+

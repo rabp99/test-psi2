@@ -5578,3 +5578,31 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2015-11-09 05:26:56 Notice: Notice (8): Undefined variable: grado in [C:\wamp\www\test-psi2\src\Template\Tests\view.ctp, line 37]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Tests\view.ctp, line 37
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-11-09 05:26:57 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\test-psi2\src\Template\Tests\view.ctp, line 37]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Tests\view.ctp, line 37
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 583
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
