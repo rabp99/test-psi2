@@ -25,8 +25,9 @@
     <?= $this->Html->css("font-awesome.min.css") ?>
     
     <!-- Writes my CSS code -->
-    <?= $this->fetch('css') ?>
-
+    <?= $this->fetch("css") ?>
+    <?= $this->fetch("script") ?>
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -290,7 +291,7 @@
     <?= $this->Html->script("sb-admin-2.js"); ?>
     
     <!-- Writes my JS code -->
-    <?= $this->fetch('script') ?>
+    <?= $this->fetch('scriptBottom') ?>
 </body>
 
 </html>

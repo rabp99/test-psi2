@@ -54,6 +54,11 @@ Router::scope('/', function ($routes) {
     $routes->fallbacks('InflectedRoute');
 });
 
+Router::scope('/', function ($routes) {
+    $routes->extensions(['json']);
+    $routes->resources('Alumnos');
+});
+
 /**
  * Load all plugin routes.  See the Plugin documentation on
  * how to customize the loading of plugin routes.

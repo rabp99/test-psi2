@@ -73,6 +73,17 @@ class TestsController extends AppController {
         $this->set(compact('test', 'tipos'));
         $this->set('_serialize', ['test']);
     }
+    
+    public function prueba() {
+        $this->layout = "main";
+        
+        $test = $this->Tests->newEntity();
+
+        $tipos = $this->Tests->Tipos->find("list")
+            ->where(['Tipos.estado' => 1]);
+        $this->set(compact('test', 'tipos'));
+        $this->set('_serialize', ['test']);
+    }
 
     /**
      * Edit method
